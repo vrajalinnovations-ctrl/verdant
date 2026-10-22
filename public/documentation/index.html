@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdant Estates — Ultra-Luxury Real Estate React 19 Template Documentation</title>
+  <meta name="description" content="Comprehensive documentation, visual architecture showcase, setup manual, and customization reference for Verdant Estates Ultra-Luxury Real Estate React 19 Template.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/logo/logo-dark.png">
+  <link rel="apple-touch-icon" href="./images/logo/logo-dark.png">
+
+  <!-- Modern Luxury Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- Dynamic Reading Progress Bar -->
+  <div class="scroll-progress-bar" id="progressBar"></div>
+
+  <!-- Ambient Luxury Aura Background -->
+  <div class="ambient-glow"></div>
+
+  <!-- Mobile Sidebar Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Top Navigation Bar -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <a href="#overview" class="brand-link">
+        <img src="./images/logo/logo-dark.png" class="doc-logo doc-logo-light" alt="Verdant Estates">
+        <img src="./images/logo/logo-light.png" class="doc-logo doc-logo-dark" alt="Verdant Estates">
+        <span>Verdant Estates Docs</span>
+      </a>
+
+      <span class="version-pill">v1.0.0 React 19</span>
+    </div>
+
+    <!-- Live Search with Shortcut Hint -->
+    <div class="search-container">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="docsSearch" class="search-input" placeholder="Search documentation & components...">
+      <span class="search-shortcut">Ctrl+K</span>
+    </div>
+
+    <!-- Topbar Actions -->
+    <div class="topbar-right">
+      <a href="./landing.html" class="nav-action-btn" title="View Presentation Showcase Page">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <circle cx="8.5" cy="8.5" r="1.5"></circle>
+          <polyline points="21 15 16 10 5 21"></polyline>
+        </svg>
+        <span>Landing Demo</span>
+      </a>
+
+      <a href="/" target="_blank" rel="noopener noreferrer" class="nav-action-btn preview-btn preview-btn-link" id="livePreviewBtn" title="Launch Live Demo Website">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        <span>Live Preview</span>
+      </a>
+
+      <button class="nav-action-btn theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      
+      <a href="#support" class="nav-action-btn">
+        <span>Support</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Documentation Layout -->
+  <div class="docs-layout">
+    
+    <!-- Left Sidebar Navigation -->
+    <aside class="docs-sidebar" id="docsSidebar">
+      <!-- Section: Visual Showcase (Prominently Placed for Buyers) -->
+      <div class="sidebar-section">
+        <div class="sidebar-heading">
+          <span>🌟 Visual Showcase</span>
+          <span class="sidebar-badge-new">Must See</span>
+        </div>
+        <ul class="sidebar-menu">
+          <li><a href="#screenshots" class="sidebar-link active"><span>Page Previews & Gallery</span></a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">🚀 Getting Started</div>
+        <ul class="sidebar-menu">
+          <li><a href="#overview" class="sidebar-link"><span>Executive Overview</span></a></li>
+          <li><a href="#features" class="sidebar-link"><span>Key Capabilities</span></a></li>
+          <li><a href="#quick-start" class="sidebar-link"><span>Quick Start</span></a></li>
+          <li><a href="#installation" class="sidebar-link"><span>Installation & Scripts</span></a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">🏛️ Core Architecture</div>
+        <ul class="sidebar-menu">
+          <li><a href="#structure" class="sidebar-link"><span>Folder Hierarchy</span></a></li>
+          <li><a href="#routes" class="sidebar-link"><span>Route Matrix</span></a></li>
+          <li><a href="#offline-assets" class="sidebar-link"><span>100% Offline Local Assets</span></a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">⚙️ Customization</div>
+        <ul class="sidebar-menu">
+          <li><a href="#content" class="sidebar-link"><span>Content Customization</span></a></li>
+          <li><a href="#theming" class="sidebar-link"><span>Dark / Light & RTL</span></a></li>
+          <li><a href="#auth-suite" class="sidebar-link"><span>5-Stage Auth Suite</span></a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">💬 Reference & Support</div>
+        <ul class="sidebar-menu">
+          <li><a href="#faq" class="sidebar-link"><span>FAQ</span></a></li>
+          <li><a href="#credits" class="sidebar-link"><span>Credits & Stack</span></a></li>
+          <li><a href="#support" class="sidebar-link"><span>Support & Author</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Central Content Area -->
+    <main class="docs-main">
+      <div class="content-wrapper">
+        
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <a href="#">Docs</a>
+          <span>/</span>
+          <span>Documentation</span>
+          <span>/</span>
+          <span style="color: var(--text-primary); font-weight: 600;">Verdant Estates React 19</span>
+        </nav>
+
+        <!-- Executive Luxury Hero Banner -->
+        <header class="doc-hero-banner" id="overview">
+          <div class="hero-aura-top"></div>
+          
+          <div class="hero-pill-badge">
+            <span class="pulse-dot"></span>
+            <span>Ultra-Luxury Architectural Residences React 19 Template</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1.25rem;">
+            <img src="./images/logo/logo-dark.png" class="doc-logo-light" alt="Verdant Estates" style="height: 48px; width: auto;">
+            <img src="./images/logo/logo-light.png" class="doc-logo-dark" alt="Verdant Estates" style="height: 48px; width: auto;">
+          </div>
+
+          <h1 class="doc-hero-title">Verdant Estates Documentation</h1>
+          
+          <p class="doc-hero-lead">
+            Welcome to the official manual and architectural reference for <strong>Verdant Estates</strong> — an ultra-luxury real estate & private estate portfolio web application engineered with <strong>React 19</strong>, <strong>Vite</strong>, and <strong>Tailwind CSS v4</strong>. Designed for high-profile agencies, architectural brokers, and private family offices.
+          </p>
+
+          <!-- Quick Metrics Ribbon -->
+          <div class="hero-metrics-ribbon">
+            <div class="metric-pill-item">
+              <div class="metric-icon-box">🌟</div>
+              <div class="metric-text-box">
+                <strong>Dual Heroes</strong>
+                <span>Split & Panoramic</span>
+              </div>
+            </div>
+
+            <div class="metric-pill-item">
+              <div class="metric-icon-box">🔐</div>
+              <div class="metric-text-box">
+                <strong>5 Auth Pages</strong>
+                <span>Complete Client Suite</span>
+              </div>
+            </div>
+
+            <div class="metric-pill-item">
+              <div class="metric-icon-box">📦</div>
+              <div class="metric-text-box">
+                <strong>100% Offline</strong>
+                <span>No CDN Dependencies</span>
+              </div>
+            </div>
+
+            <div class="metric-pill-item">
+              <div class="metric-icon-box">🌓</div>
+              <div class="metric-text-box">
+                <strong>Dark / Light & RTL</strong>
+                <span>Instant Layout Toggles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="hero-cta-group">
+            <a href="/" target="_blank" rel="noopener noreferrer" class="btn-primary-glow preview-btn-link">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>Launch Live Preview</span>
+            </a>
+
+            <a href="#screenshots" class="btn-secondary-outline">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Explore Visual Showcase</span>
+            </a>
+
+            <a href="#quick-start" class="btn-secondary-outline">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span>Quick Start Setup</span>
+            </a>
+          </div>
+        </header>
+
+        <!-- ===================================================================
+             SECTION 1: VISUAL SHOWCASE & PAGE PREVIEWS (PROMINENT BUYER POSITION)
+             =================================================================== -->
+        <section id="screenshots" class="doc-section">
+          <h2 class="section-title">
+            <span>Visual Showcase & Page Previews</span>
+            <a href="#screenshots">#</a>
+          </h2>
+          <p class="doc-text">
+            Experience high-resolution interactive previews of every included luxury homepage, full-stage client authentication screen, and property showcase. Click on any preview to open in full-screen magnification:
+          </p>
+
+          <!-- Showcase Header Info Card -->
+          <div class="showcase-header-card">
+            <div class="showcase-header-info">
+              <h4>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                <span>Curated Luxury Design System</span>
+              </h4>
+              <p>Every interface is engineered with high-contrast luxury styling, fluid Lenis inertial momentum, and zero arbitrary class clutter.</p>
+            </div>
+            <div>
+              <a href="/" target="_blank" rel="noopener noreferrer" class="nav-action-btn preview-btn-link" style="padding: 0.4rem 0.95rem; font-size: 0.825rem;">
+                <span>Test Live Demo ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Category Filter Bar -->
+          <div class="preview-filter-bar">
+            <button type="button" class="filter-btn active" data-filter="all">
+              <span>✦ All Previews</span>
+              <code>(11)</code>
+            </button>
+            <button type="button" class="filter-btn" data-filter="heroes">
+              <span>🌟 Dual Homepages</span>
+              <code>(2)</code>
+            </button>
+            <button type="button" class="filter-btn" data-filter="auth">
+              <span>🔐 Client Auth Suite</span>
+              <code>(5)</code>
+            </button>
+            <button type="button" class="filter-btn" data-filter="portfolios">
+              <span>🏛️ Portfolios & Sections</span>
+              <code>(3)</code>
+            </button>
+            <button type="button" class="filter-btn" data-filter="errors">
+              <span>⚠️ Error Pages</span>
+              <code>(2)</code>
+            </button>
+          </div>
+
+          <!-- 1. Hero 1 Mockup -->
+          <div class="browser-mockup preview-item" data-category="heroes">
+            <div class="browser-chrome">
+              <div class="chrome-controls">
+                <span class="dot-btn dot-close"></span>
+                <span class="dot-btn dot-minimize"></span>
+                <span class="dot-btn dot-expand"></span>
+              </div>
+              <div class="chrome-address-bar">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>https://verdantestates.com/</span>
+              </div>
+              <span class="chrome-badge">Homepage Variant 1</span>
+            </div>
+            <div class="browser-screen-wrap">
+              <img src="./images/hero1.png" alt="Hero 1 Editorial Split Showcase Preview" loading="lazy">
+              <span class="zoom-hint-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to Enlarge
+              </span>
+            </div>
+            <div class="browser-caption">
+              <div class="caption-info">
+                <strong>Hero 1 — Editorial Split Showcase</strong>
+                <span>Split-screen architecture hero with multi-tab property search bar, live metrics counter, and featured estate showcase.</span>
+              </div>
+              <span class="caption-tag-pill">Route: /</span>
+            </div>
+          </div>
+
+          <!-- 2. Hero 2 Mockup -->
+          <div class="browser-mockup preview-item" data-category="heroes">
+            <div class="browser-chrome">
+              <div class="chrome-controls">
+                <span class="dot-btn dot-close"></span>
+                <span class="dot-btn dot-minimize"></span>
+                <span class="dot-btn dot-expand"></span>
+              </div>
+              <div class="chrome-address-bar">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>https://verdantestates.com/hero2</span>
+              </div>
+              <span class="chrome-badge">Homepage Variant 2</span>
+            </div>
+            <div class="browser-screen-wrap">
+              <img src="./images/hero2.png" alt="Hero 2 Panoramic Slider Preview" loading="lazy">
+              <span class="zoom-hint-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to Enlarge
+              </span>
+            </div>
+            <div class="browser-caption">
+              <div class="caption-info">
+                <strong>Hero 2 — Full-Bleed Panoramic Cinematic Slider</strong>
+                <span>Full-screen cinematic estate slider with smooth dissolves, live GPS coordinates pill (43.6892° N, 7.3328° E), floating valuation card, and docked search.</span>
+              </div>
+              <span class="caption-tag-pill">Route: /hero2</span>
+            </div>
+          </div>
+
+          <!-- 3. Featured Properties Mockup -->
+          <div class="browser-mockup preview-item" data-category="portfolios">
+            <div class="browser-chrome">
+              <div class="chrome-controls">
+                <span class="dot-btn dot-close"></span>
+                <span class="dot-btn dot-minimize"></span>
+                <span class="dot-btn dot-expand"></span>
+              </div>
+              <div class="chrome-address-bar">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>https://verdantestates.com/#properties</span>
+              </div>
+              <span class="chrome-badge">Portfolio Section</span>
+            </div>
+            <div class="browser-screen-wrap">
+              <img src="./images/featured.png" alt="Featured Properties Portfolio Preview" loading="lazy">
+              <span class="zoom-hint-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to Enlarge
+              </span>
+            </div>
+            <div class="browser-caption">
+              <div class="caption-info">
+                <strong>Featured Properties Portfolio</strong>
+                <span>Curated filterable estate cards with pricing, architectural metrics, bedroom/bath specs, and high-res local photography.</span>
+              </div>
+              <span class="caption-tag-pill">Section: #properties</span>
+            </div>
+          </div>
+
+          <!-- 4. Architecture & Spotlight 2-Col Grid -->
+          <div class="preview-grid-2col preview-item" data-category="portfolios">
+            <div class="browser-mockup" style="margin: 0;">
+              <div class="browser-chrome">
+                <div class="chrome-controls">
+                  <span class="dot-btn dot-close"></span>
+                  <span class="dot-btn dot-minimize"></span>
+                  <span class="dot-btn dot-expand"></span>
+                </div>
+                <div class="chrome-address-bar">
+                  <span>https://verdantestates.com/#developments</span>
+                </div>
+              </div>
+              <div class="browser-screen-wrap">
+                <img src="./images/architecture.png" alt="Landmark Architectural Developments" loading="lazy">
+                <span class="zoom-hint-pill">Enlarge</span>
+              </div>
+              <div class="browser-caption">
+                <div class="caption-info">
+                  <strong>Landmark Developments</strong>
+                  <span>Master-planned community dossiers and factsheets.</span>
+                </div>
+                <span class="caption-tag-pill">#developments</span>
+              </div>
+            </div>
+
+            <div class="browser-mockup" style="margin: 0;">
+              <div class="browser-chrome">
+                <div class="chrome-controls">
+                  <span class="dot-btn dot-close"></span>
+                  <span class="dot-btn dot-minimize"></span>
+                  <span class="dot-btn dot-expand"></span>
+                </div>
+                <div class="chrome-address-bar">
+                  <span>https://verdantestates.com/#showcase</span>
+                </div>
+              </div>
+              <div class="browser-screen-wrap">
+                <img src="./images/primary.png" alt="Architectural Spotlight Showcase" loading="lazy">
+                <span class="zoom-hint-pill">Enlarge</span>
+              </div>
+              <div class="browser-caption">
+                <div class="caption-info">
+                  <strong>Spotlight Showcase</strong>
+                  <span>Cinematic video tour preview & metrics.</span>
+                </div>
+                <span class="caption-tag-pill">#showcase</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Testimonials Infinite Marquee -->
+          <div class="browser-mockup preview-item" data-category="portfolios">
+            <div class="browser-chrome">
+              <div class="chrome-controls">
+                <span class="dot-btn dot-close"></span>
+                <span class="dot-btn dot-minimize"></span>
+                <span class="dot-btn dot-expand"></span>
+              </div>
+              <div class="chrome-address-bar">
+                <span>https://verdantestates.com/#testimonials</span>
+              </div>
+              <span class="chrome-badge">Dual Infinite Marquee</span>
+            </div>
+            <div class="browser-screen-wrap">
+              <img src="./images/testimonials.png" alt="Client Testimonials Marquee Preview" loading="lazy">
+              <span class="zoom-hint-pill">Click to Enlarge</span>
+            </div>
+            <div class="browser-caption">
+              <div class="caption-info">
+                <strong>Client Testimonials & Private Reviews</strong>
+                <span>Dual-row smooth infinite marquee with local client portraits (`src/assets/user/`) and verified transactions.</span>
+              </div>
+              <span class="caption-tag-pill">#testimonials</span>
+            </div>
+          </div>
+
+          <!-- 6. Client Auth Suite Grid (Login & Register) -->
+          <div class="preview-grid-2col preview-item" data-category="auth">
+            <div class="browser-mockup" style="margin: 0;">
+              <div class="browser-chrome">
+                <div class="chrome-controls">
+                  <span class="dot-btn dot-close"></span>
+                  <span class="dot-btn dot-minimize"></span>
+                  <span class="dot-btn dot-expand"></span>
+                </div>
+                <div class="chrome-address-bar">
+                  <span>https://verdantestates.com/login</span>
+                </div>
+              </div>
+              <div class="browser-screen-wrap">
+                <img src="./images/login.png" alt="Client Portal Login Screen" loading="lazy">
+                <span class="zoom-hint-pill">Enlarge</span>
+              </div>
+              <div class="browser-caption">
+                <div class="caption-info">
+                  <strong>Client Portal Login</strong>
+                  <span>Passkey unlock vault, remember-me, and Google/Apple SSO.</span>
+                </div>
+                <span class="caption-tag-pill">/login</span>
+              </div>
+            </div>
+
+            <div class="browser-mockup" style="margin: 0;">
+              <div class="browser-chrome">
+                <div class="chrome-controls">
+                  <span class="dot-btn dot-close"></span>
+                  <span class="dot-btn dot-minimize"></span>
+                  <span class="dot-btn dot-expand"></span>
+                </div>
+                <div class="chrome-address-bar">
+                  <span>https://verdantestates.com/register</span>
+                </div>
+              </div>
+              <div class="browser-screen-wrap">
+                <img src="./images/singup-page.png" alt="Investor Accreditation Application" loading="lazy">
+                <span class="zoom-hint-pill">Enlarge</span>
+              </div>
+              <div class="browser-caption">
+                <div class="caption-info">
+                  <strong>Investor Accreditation</strong>
+                  <span>Client tier selection (Family Office, Institution) & NDA covenant.</span>
+                </div>
+                <span class="caption-tag-pill">/register</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Auth Suite Grid (Forgot Password, Verify, Confirm) -->
+          <div class="preview-grid-2col preview-item" data-category="auth">
+            <div class="browser-mockup" style="margin: 0;">
+              <div class="browser-chrome">
+                <div class="chrome-controls">
+                  <span class="dot-btn dot-close"></span>
+                  <span class="dot-btn dot-minimize"></span>
+                  <span class="dot-btn dot-expand"></span>
+                </div>
+                <div class="chrome-address-bar">
+                  <span>https://verdantestates.com/forgot-password</span>
+                </div>
+              </div>
+              <div class="browser-screen-wrap">
+                <img src="./images/forgot-password.png" alt="Passkey Recovery Screen" loading="lazy">
+                <span class="zoom-hint-pill">Enlarge</span>
+              </div>
+              <div class="browser-caption">
+                <div class="caption-info">
+                  <strong>Passkey Recovery</strong>
+                  <span>One-time recovery token transmission.</span>
+                </div>
+                <span class="caption-tag-pill">/forgot-password</span>
+              </div>
+            </div>
+
+            <div class="browser-mockup" style="margin: 0;">
+              <div class="browser-chrome">
+                <div class="chrome-controls">
+                  <span class="dot-btn dot-close"></span>
+                  <span class="dot-btn dot-minimize"></span>
+                  <span class="dot-btn dot-expand"></span>
+                </div>
+                <div class="chrome-address-bar">
+                  <span>https://verdantestates.com/verify</span>
+                </div>
+              </div>
+              <div class="browser-screen-wrap">
+                <img src="./images/verify-page.png" alt="Two-Factor OTP Verification Screen" loading="lazy">
+                <span class="zoom-hint-pill">Enlarge</span>
+              </div>
+              <div class="browser-caption">
+                <div class="caption-info">
+                  <strong>Two-Factor OTP Clearance</strong>
+                  <span>Auto-advancing 6-digit boxes with 45s timer.</span>
+                </div>
+                <span class="caption-tag-pill">/verify</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Confirm Password & Reset Mockup -->
+          <div class="browser-mockup preview-item" data-category="auth">
+            <div class="browser-chrome">
+              <div class="chrome-controls">
+                <span class="dot-btn dot-close"></span>
+                <span class="dot-btn dot-minimize"></span>
+                <span class="dot-btn dot-expand"></span>
+              </div>
+              <div class="chrome-address-bar">
+                <span>https://verdantestates.com/confirm-password</span>
+              </div>
+              <span class="chrome-badge">Password Checklist Validation</span>
+            </div>
+            <div class="browser-screen-wrap">
+              <img src="./images/confirm-password.png" alt="Reset Passkey with Live Validation Checklist" loading="lazy">
+              <span class="zoom-hint-pill">Click to Enlarge</span>
+            </div>
+            <div class="browser-caption">
+              <div class="caption-info">
+                <strong>Confirm & Reset Passkey</strong>
+                <span>Interactive 4-point security criteria checklist with live feedback and success confirmation modal.</span>
+              </div>
+              <span class="caption-tag-pill">Route: /confirm-password</span>
+            </div>
+          </div>
+
+          <!-- 9. 404 & 500 Luxury Error Pages -->
+          <div class="preview-grid-2col preview-item" data-category="errors">
+            <div class="browser-mockup" style="margin: 0;">
+              <div class="browser-chrome">
+                <div class="chrome-controls">
+                  <span class="dot-btn dot-close"></span>
+                  <span class="dot-btn dot-minimize"></span>
+                  <span class="dot-btn dot-expand"></span>
+                </div>
+                <div class="chrome-address-bar">
+                  <span>https://verdantestates.com/404</span>
+                </div>
+              </div>
+              <div class="browser-screen-wrap">
+                <img src="./images/404.png" alt="404 Page Not Found" loading="lazy">
+                <span class="zoom-hint-pill">Enlarge</span>
+              </div>
+              <div class="browser-caption">
+                <div class="caption-info">
+                  <strong>404 — Page Not Found</strong>
+                  <span>Luxury architectural error page with search bar & suggested routes.</span>
+                </div>
+                <span class="caption-tag-pill">Route: *</span>
+              </div>
+            </div>
+
+            <div class="browser-mockup" style="margin: 0;">
+              <div class="browser-chrome">
+                <div class="chrome-controls">
+                  <span class="dot-btn dot-close"></span>
+                  <span class="dot-btn dot-minimize"></span>
+                  <span class="dot-btn dot-expand"></span>
+                </div>
+                <div class="chrome-address-bar">
+                  <span>https://verdantestates.com/500</span>
+                </div>
+              </div>
+              <div class="browser-screen-wrap">
+                <img src="./images/500.png" alt="500 Internal Server Error" loading="lazy">
+                <span class="zoom-hint-pill">Enlarge</span>
+              </div>
+              <div class="browser-caption">
+                <div class="caption-info">
+                  <strong>500 — Server Incident</strong>
+                  <span>Private reserve maintenance notice with diagnostics reload action.</span>
+                </div>
+                <span class="caption-tag-pill">Route: /500</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 2: KEY CAPABILITIES & FEATURES
+             =================================================================== -->
+        <section id="features" class="doc-section">
+          <h2 class="section-title">
+            <span>Key Capabilities & Features</span>
+            <a href="#features">#</a>
+          </h2>
+          <p class="doc-text">
+            Verdant Estates is built to the highest contemporary web standards, featuring:
+          </p>
+
+          <div class="card-grid">
+            <div class="feature-card">
+              <div class="feature-card-icon">⚡</div>
+              <h3>React 19 & Vite</h3>
+              <p>Instant Hot Module Replacement (HMR) and optimized build times.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-icon">🎨</div>
+              <h3>Tailwind CSS v4</h3>
+              <p>Modern utility classes with consistent tokens and zero bracket clutter.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-icon">🌓</div>
+              <h3>Dark / Light Mode</h3>
+              <p>Instant theme switching with persistent localStorage and high contrast.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-icon">🌍</div>
+              <h3>RTL Direction Support</h3>
+              <p>One-click layout flip for Arabic, Hebrew, and global Middle Eastern markets.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-icon">🌊</div>
+              <h3>Lenis Inertial Scroll</h3>
+              <p>Ultra-smooth momentum scrolling for an uncompromised luxury feel.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-icon">📦</div>
+              <div class="metric-text-box">
+                <h3 style="margin: 0; font-size: 1.1rem;">100% Offline Assets</h3>
+              </div>
+              <p style="margin-top: 0.45rem;">Zero dead external links; all estate photos and avatars are bundled locally.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 3: QUICK START SETUP
+             =================================================================== -->
+        <section id="quick-start" class="doc-section">
+          <h2 class="section-title">
+            <span>Quick Start</span>
+            <a href="#quick-start">#</a>
+          </h2>
+          <p class="doc-text">
+            Get the development environment running locally in three simple steps:
+          </p>
+
+          <div class="code-container">
+            <div class="code-header">
+              <div class="code-header-left">
+                <div class="code-dots">
+                  <span class="code-dot" style="background:#ff5f56"></span>
+                  <span class="code-dot" style="background:#ffbd2e"></span>
+                  <span class="code-dot" style="background:#27c93f"></span>
+                </div>
+                <span class="code-lang">bash</span>
+              </div>
+              <button class="copy-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+            <pre class="code-block"><code># 1. Install dependencies
+npm install
+
+# 2. Start local Vite development server
+npm run dev
+
+# 3. Open browser at http://localhost:5173/</code></pre>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 4: INSTALLATION & NPM SCRIPTS
+             =================================================================== -->
+        <section id="installation" class="doc-section">
+          <h2 class="section-title">
+            <span>Installation & NPM Scripts</span>
+            <a href="#installation">#</a>
+          </h2>
+          <p class="doc-text">
+            Standard scripts available in <code>package.json</code>:
+          </p>
+
+          <div class="doc-table-wrap">
+            <table class="doc-table">
+              <thead>
+                <tr>
+                  <th>Command</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>npm run dev</code></td>
+                  <td>Starts the Vite development server with Hot Module Replacement on port 5173.</td>
+                </tr>
+                <tr>
+                  <td><code>npm run build</code></td>
+                  <td>Compiles and bundles the production-optimized files into the <code>/dist</code> folder.</td>
+                </tr>
+                <tr>
+                  <td><code>npm run preview</code></td>
+                  <td>Locally serves the production bundle from <code>/dist</code> for pre-deployment QA.</td>
+                </tr>
+                <tr>
+                  <td><code>npm run lint</code></td>
+                  <td>Executes ESLint against all components to ensure clean code standards.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 5: FOLDER STRUCTURE
+             =================================================================== -->
+        <section id="structure" class="doc-section">
+          <h2 class="section-title">
+            <span>Folder Structure</span>
+            <a href="#structure">#</a>
+          </h2>
+          <p class="doc-text">
+            Clean, modular project organization adhering to standard React conventions:
+          </p>
+
+          <pre class="folder-tree"><code><span class="tree-folder">verdant-luxury-real-estate/</span>
+├── <span class="tree-folder">public/</span>                     <span class="tree-comment"># Static public assets & brand logos</span>
+│   ├── <span class="tree-folder">documentation/</span>          <span class="tree-comment"># Complete offline HTML documentation</span>
+│   └── <span class="tree-folder">logo/</span>                   <span class="tree-comment"># Brand logos (dark and light)</span>
+├── <span class="tree-folder">src/</span>
+│   ├── <span class="tree-folder">assets/</span>                 <span class="tree-comment"># 100% Local bundled photography</span>
+│   │   ├── <span class="tree-folder">house/</span>              <span class="tree-comment"># High-resolution property photos (1.jpg to 7.jpg)</span>
+│   │   └── <span class="tree-folder">user/</span>               <span class="tree-comment"># Client avatars for testimonials (avatar-1 to 8)</span>
+│   ├── <span class="tree-folder">components/</span>
+│   │   ├── <span class="tree-folder">layout/</span>             <span class="tree-comment"># Navbar1 and Footer1 components</span>
+│   │   ├── <span class="tree-folder">sections/</span>           <span class="tree-comment"># Properties, Developments, Marquee, About</span>
+│   │   └── <span class="tree-folder">ui/</span>                 <span class="tree-comment"># Accessible Button, Badge, Modal primitives</span>
+│   ├── <span class="tree-folder">context/</span>                <span class="tree-comment"># ThemeContext (Dark/Light + RTL state)</span>
+│   ├── <span class="tree-folder">data/</span>                   <span class="tree-comment"># Editable JSON content files & image mapper</span>
+│   ├── <span class="tree-folder">pages/</span>                  <span class="tree-comment"># Hero1, Hero2, 404, 500, and Auth Suite</span>
+│   │   └── <span class="tree-folder">auth/</span>               <span class="tree-comment"># Login, Register, Forgot, Verify, Confirm</span>
+│   ├── <span class="tree-folder">routes/</span>                 <span class="tree-comment"># AppRoutes configuration</span>
+│   ├── <span class="tree-file">App.jsx</span>                 <span class="tree-comment"># Lenis smooth scroll & Router wrapper</span>
+│   └── <span class="tree-file">main.jsx</span>                <span class="tree-comment"># Application entry point</span>
+├── <span class="tree-file">package.json</span>
+└── <span class="tree-file">vite.config.js</span></code></pre>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 6: ROUTES & PAGES MATRIX
+             =================================================================== -->
+        <section id="routes" class="doc-section">
+          <h2 class="section-title">
+            <span>Pages & Routes Matrix</span>
+            <a href="#routes">#</a>
+          </h2>
+          <p class="doc-text">
+            All registered routes configured in <code>src/routes/approutes.jsx</code>:
+          </p>
+
+          <div class="doc-table-wrap">
+            <table class="doc-table">
+              <thead>
+                <tr>
+                  <th>URL Route</th>
+                  <th>Component</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>/</code> or <code>/hero1</code></td>
+                  <td><code>Hero1.jsx</code></td>
+                  <td>Split-screen editorial luxury showcase with property filters & metrics.</td>
+                </tr>
+                <tr>
+                  <td><code>/hero2</code></td>
+                  <td><code>Hero2.jsx</code></td>
+                  <td>Cinematic full-bleed estate slider with live GPS pill & valuation card.</td>
+                </tr>
+                <tr>
+                  <td><code>/login</code></td>
+                  <td><code>Login.jsx</code></td>
+                  <td>Private client vault authentication with passkey and SSO.</td>
+                </tr>
+                <tr>
+                  <td><code>/register</code></td>
+                  <td><code>Register.jsx</code></td>
+                  <td>Accredited investor application with confidentiality agreement.</td>
+                </tr>
+                <tr>
+                  <td><code>/forgot-password</code></td>
+                  <td><code>ForgotPassword.jsx</code></td>
+                  <td>Secure recovery token request routed to 2FA verification.</td>
+                </tr>
+                <tr>
+                  <td><code>/verify</code></td>
+                  <td><code>Verify.jsx</code></td>
+                  <td>Auto-advancing 6-digit OTP verification with 45s timer.</td>
+                </tr>
+                <tr>
+                  <td><code>/confirm-password</code></td>
+                  <td><code>ConfirmPassword.jsx</code></td>
+                  <td>Live 4-point passkey criteria checklist with modal confirmation.</td>
+                </tr>
+                <tr>
+                  <td><code>/500</code></td>
+                  <td><code>ServerError.jsx</code></td>
+                  <td>Custom 500 server incident luxury notice.</td>
+                </tr>
+                <tr>
+                  <td><code>*</code> (Catch-all)</td>
+                  <td><code>NotFound.jsx</code></td>
+                  <td>Custom 404 luxury page with property search action.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 7: LOCAL OFFLINE ASSETS
+             =================================================================== -->
+        <section id="offline-assets" class="doc-section">
+          <h2 class="section-title">
+            <span>100% Offline Local Photography</span>
+            <a href="#offline-assets">#</a>
+          </h2>
+          <p class="doc-text">
+            To ensure zero dead external URLs or CDN loading issues, all high-resolution imagery is bundled locally and safely mapped through <code>src/data/houseimages.js</code>:
+          </p>
+
+          <div class="callout callout-tip">
+            <span class="callout-icon">💡</span>
+            <div class="callout-content">
+              <p><strong>Offline Guarantee:</strong> To add your own property photos, simply copy your JPG or PNG images into <code>src/assets/house/</code> and reference them in <code>propertiesdata.json</code> by file name (e.g., <code>"1.jpg"</code>).</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 8: CONTENT CUSTOMIZATION
+             =================================================================== -->
+        <section id="content" class="doc-section">
+          <h2 class="section-title">
+            <span>Content Customization Guide</span>
+            <a href="#content">#</a>
+          </h2>
+          <p class="doc-text">
+            Customize all website text, properties, contact details, and navigation links by editing the JSON files in <code>src/data/</code> without writing React code:
+          </p>
+
+          <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8; color: var(--text-secondary);">
+            <li><code>navbardata.json</code>: Brand name, phone number, CTA button text, and top links.</li>
+            <li><code>footerdata.json</code>: Address, email, phone, office hours, and copyright disclaimer.</li>
+            <li><code>propertiesdata.json</code>: Estate listings, prices, square footage, beds, and baths.</li>
+            <li><code>developmentsdata.json</code>: Landmark architectural projects and factsheets.</li>
+            <li><code>testimonialsdata.json</code>: Verified investor reviews and portfolio ratings.</li>
+          </ul>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 9: THEMING, DARK MODE & RTL
+             =================================================================== -->
+        <section id="theming" class="doc-section">
+          <h2 class="section-title">
+            <span>Dark / Light Mode & RTL Support</span>
+            <a href="#theming">#</a>
+          </h2>
+          <p class="doc-text">
+            Controlled globally via <code>ThemeContext</code>:
+          </p>
+
+          <div class="card-grid">
+            <div class="feature-card">
+              <div class="feature-card-icon">🌓</div>
+              <h3>Instant Theme Switcher</h3>
+              <p>Toggles the <code>.dark</code> class on <code>&lt;html&gt;</code> with instant localStorage persistence.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-icon">🌍</div>
+              <h3>RTL Layout Direction</h3>
+              <p>Toggles <code>dir="rtl"</code> attribute on <code>&lt;html&gt;</code>, seamlessly adapting layout for Arabic and Hebrew.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 10: FAQ & CREDITS
+             =================================================================== -->
+        <section id="faq" class="doc-section">
+          <h2 class="section-title">
+            <span>Frequently Asked Questions</span>
+            <a href="#faq">#</a>
+          </h2>
+
+          <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+            <div class="feature-card">
+              <h3>Can I deploy this to Vercel, Netlify, or Apache?</h3>
+              <p>Yes! Run <code>npm run build</code> and upload the generated <code>/dist</code> folder. For SPA routing on static hosts, rewrite all requests to <code>/index.html</code>.</p>
+            </div>
+
+            <div class="feature-card">
+              <h3>How do I change the default theme to Light Mode?</h3>
+              <p>In <code>src/context/themecontext.jsx</code>, change the default state fallback from <code>"dark"</code> to <code>"light"</code>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="credits" class="doc-section">
+          <h2 class="section-title">
+            <span>Credits & Technology Stack</span>
+            <a href="#credits">#</a>
+          </h2>
+          <ul style="margin: 1rem 0 1.5rem 1.5rem; line-height: 1.8; color: var(--text-secondary);">
+            <li><strong>React 19:</strong> Modern UI component architecture.</li>
+            <li><strong>Vite:</strong> Ultra-fast frontend tooling and bundler.</li>
+            <li><strong>Tailwind CSS v4:</strong> Next-generation utility styling with clean tokens.</li>
+            <li><strong>React Router DOM v7:</strong> Client-side routing.</li>
+            <li><strong>Lucide React:</strong> Clean feather icon set.</li>
+            <li><strong>Lenis:</strong> Inertial momentum smooth scrolling.</li>
+          </ul>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 11: SUPPORT & AUTHOR
+             =================================================================== -->
+        <section id="support" class="doc-section">
+          <h2 class="section-title">
+            <span>Support & Author Information</span>
+            <a href="#support">#</a>
+          </h2>
+          <p class="doc-text">
+            Need assistance, customization services, or feature inquiries?
+          </p>
+
+          <div class="callout callout-tip">
+            <span class="callout-icon">💬</span>
+            <div class="callout-content">
+              <p><strong>Author & Customer Support:</strong> Contact <strong>vrajalinnovations</strong> directly for technical inquiries and customization support. We respond within 24–48 business hours.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pagination -->
+        <div class="docs-pagination">
+          <a href="#overview" class="page-nav-link">
+            <span class="page-nav-sub">Top</span>
+            <span class="page-nav-title">↑ Back to Overview</span>
+          </a>
+          <a href="/" target="_blank" rel="noopener noreferrer" class="page-nav-link page-nav-next preview-btn-link">
+            <span class="page-nav-sub">Demo</span>
+            <span class="page-nav-title">Launch Live Website →</span>
+          </a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Right Table of Contents (TOC) -->
+    <aside class="docs-toc">
+      <div class="toc-title">On This Page</div>
+      <ul class="toc-menu">
+        <li><a href="#overview" class="toc-link">Executive Overview</a></li>
+        <li><a href="#screenshots" class="toc-link">Visual Showcase & Previews</a></li>
+        <li><a href="#features" class="toc-link">Key Capabilities</a></li>
+        <li><a href="#quick-start" class="toc-link">Quick Start</a></li>
+        <li><a href="#installation" class="toc-link">Installation & Scripts</a></li>
+        <li><a href="#structure" class="toc-link">Folder Structure</a></li>
+        <li><a href="#routes" class="toc-link">Pages & Routes Matrix</a></li>
+        <li><a href="#offline-assets" class="toc-link">100% Offline Assets</a></li>
+        <li><a href="#content" class="toc-link">Content Customization</a></li>
+        <li><a href="#theming" class="toc-link">Dark / Light & RTL</a></li>
+        <li><a href="#faq" class="toc-link">FAQ</a></li>
+        <li><a href="#credits" class="toc-link">Credits & Stack</a></li>
+        <li><a href="#support" class="toc-link">Support & Author</a></li>
+      </ul>
+    </aside>
+
+  </div>
+
+  <!-- Fullscreen High-Resolution Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close magnification modal">✕</button>
+      <img src="" alt="Fullscreen Magnification" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-title" id="lightboxTitle"></div>
+    </div>
+  </div>
+
+  <!-- Documentation Logic -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

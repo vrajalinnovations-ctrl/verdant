@@ -1,0 +1,49 @@
+{
+  "name": "verdant-luxury-real-estate-react-template",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Verdant Estates - Ultra-Luxury Real Estate & Architectural Properties React Template built with React 19, Vite, and Tailwind CSS",
+  "author": "vrajalinnovations",
+  "license": "Commercial",
+  "keywords": [
+    "react",
+    "real-estate",
+    "luxury-homes",
+    "vite",
+    "tailwindcss",
+    "real-estate-template",
+    "landing-page",
+    "dark-mode",
+    "property-showcase"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "lenis": "^1.3.27",
+    "lucide-react": "^1.38.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@eslint/js": "^10.0.1",
+    "@rolldown/plugin-babel": "^0.2.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "eslint": "^10.9.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.4",
+    "globals": "^17.11.0",
+    "vite": "^8.2.2"
+  }
+}

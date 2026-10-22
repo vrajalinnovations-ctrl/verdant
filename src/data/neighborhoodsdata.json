@@ -1,0 +1,66 @@
+{
+  "sectionHeader": {
+    "badge": "Prime Enclaves",
+    "title": "Curated Neighborhood Guides",
+    "description": "Discover the lifestyle nuances, architectural heritage, and market dynamics across the world's most desirable residential enclaves."
+  },
+  "neighborhoods": [
+    {
+      "id": "neigh-1",
+      "name": "Beverly Hills & Bel Air",
+      "region": "Los Angeles, California",
+      "tagline": "Iconic heritage estates and lush canyon privacy",
+      "description": "Synonymous with global prestige, offering secluded hillside compounds, world-class private dining on Rodeo Drive, and historic mid-century architectural legacies.",
+      "avgPrice": "$9,850,000",
+      "growth": "+8.4% YoY",
+      "activeListings": "28 Homes",
+      "lifestyleScore": "98 / 100",
+      "highlights": ["Gated Security", "Michelin Dining", "Private Grounds"],
+      "image": "6.jpg"
+    },
+    {
+      "id": "neigh-2",
+      "name": "Aspen & Snowmass",
+      "region": "Colorado Rockies",
+      "tagline": "High-alpine majesty meets four-season cultural vibrancy",
+      "description": "An internationally celebrated alpine enclave combining premier ski-in/ski-out estates, world-class music and ideas festivals, and year-round mountain retreats.",
+      "avgPrice": "$12,400,000",
+      "growth": "+11.2% YoY",
+      "activeListings": "16 Chalets",
+      "lifestyleScore": "96 / 100",
+      "highlights": ["Ski-In Access", "Cultural Festivals", "Pristine Nature"],
+      "image": "7.jpg"
+    },
+    {
+      "id": "neigh-3",
+      "name": "Tribeca & SoHo",
+      "region": "Manhattan, New York",
+      "tagline": "Historic cobblestone charm and soaring loft volumes",
+      "description": "New York's preeminent downtown addresses, characterized by authentic cast-iron façades, Michelin-starred bistros, designer boutiques, and rooftop penthouses.",
+      "avgPrice": "$7,200,000",
+      "growth": "+6.1% YoY",
+      "activeListings": "34 Lofts",
+      "lifestyleScore": "99 / 100",
+      "highlights": ["Cast-Iron Architecture", "Art Galleries", "Walkable Enclave"],
+      "image": "1.jpg"
+    },
+    {
+      "id": "neigh-4",
+      "name": "Miami Beach & Star Island",
+      "region": "South Florida Coast",
+      "tagline": "Tropical modernism, private docks, and turquoise horizons",
+      "description": "A sun-drenched sanctuary of ultra-contemporary waterfront villas, deep-water mega-yacht moorings, and effortless access to international art and nightlife.",
+      "avgPrice": "$8,950,000",
+      "growth": "+14.6% YoY",
+      "activeListings": "22 Estates",
+      "lifestyleScore": "95 / 100",
+      "highlights": ["Private Moorings", "Oceanfront Access", "Art Basel District"],
+      "image": "2.jpg"
+    }
+  ],
+  "areaGuidePromo": {
+    "title": "Request Bespoke Neighborhood Dossiers",
+    "description": "Receive comprehensive private market reports, school district ratings, zoning insights, and recent off-market comps.",
+    "buttonText": "Request Private Area Guide"
+  }
+}

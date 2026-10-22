@@ -1,0 +1,13 @@
+{
+  "brandName": "VERDANT",
+  "brandSubtitle": "ESTATES",
+  "navLinks": [
+    { "label": "Properties", "href": "#properties" },
+    { "label": "Developments", "href": "#developments" },
+    { "label": "Neighborhoods", "href": "#neighborhoods" },
+    { "label": "Sell", "href": "#sell" },
+    { "label": "About", "href": "#about" }
+  ],
+  "phoneNumber": "+1 (800) 555-0199",
+  "ctaText": "Schedule Viewing"
+}

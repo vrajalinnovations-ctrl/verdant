@@ -1,0 +1,82 @@
+{
+  "sectionHeader": {
+    "badge": "Curated Portfolio",
+    "title": "Featured Private Residences",
+    "description": "Explore an exclusive selection of architectural masterworks, coastal estates, and sky penthouses available for private acquisition."
+  },
+  "categories": ["All", "Villa", "Penthouse", "Waterfront", "Estate"],
+  "properties": [
+    {
+      "id": "prop-1",
+      "title": "The Glass House Sanctuary",
+      "location": "Montecito, California",
+      "price": "$5,200,000",
+      "category": "Villa",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "5,800 sq ft",
+      "tag": "Featured Exclusive",
+      "image": "1.jpg"
+    },
+    {
+      "id": "prop-2",
+      "title": "Hillside Modern Pavilion",
+      "location": "Aspen, Colorado",
+      "price": "$7,850,000",
+      "category": "Estate",
+      "beds": 5,
+      "baths": 6,
+      "sqft": "7,200 sq ft",
+      "tag": "New Listing",
+      "image": "2.jpg"
+    },
+    {
+      "id": "prop-3",
+      "title": "Coastal Cliffside Estate",
+      "location": "Carmel-by-the-Sea, California",
+      "price": "$9,400,000",
+      "category": "Waterfront",
+      "beds": 6,
+      "baths": 7,
+      "sqft": "8,500 sq ft",
+      "tag": "Waterfront",
+      "image": "3.jpg"
+    },
+    {
+      "id": "prop-4",
+      "title": "The Bel-Air Horizon Villa",
+      "location": "Los Angeles, California",
+      "price": "$12,500,000",
+      "category": "Villa",
+      "beds": 5,
+      "baths": 6.5,
+      "sqft": "9,100 sq ft",
+      "tag": "Architectural Icon",
+      "image": "4.jpg"
+    },
+    {
+      "id": "prop-5",
+      "title": "One Central Park Sky Penthouse",
+      "location": "Manhattan, New York",
+      "price": "$16,800,000",
+      "category": "Penthouse",
+      "beds": 4,
+      "baths": 5,
+      "sqft": "6,400 sq ft",
+      "tag": "Rare Offering",
+      "image": "5.jpg"
+    },
+    {
+      "id": "prop-6",
+      "title": "Biscayne Bay Waterfront Villa",
+      "location": "Miami Beach, Florida",
+      "price": "$14,200,000",
+      "category": "Waterfront",
+      "beds": 6,
+      "baths": 7,
+      "sqft": "8,200 sq ft",
+      "tag": "Private Dock",
+      "image": "6.jpg"
+    }
+  ]
+}

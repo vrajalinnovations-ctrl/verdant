@@ -1,0 +1,69 @@
+{
+  "heroContent": {
+    "badgeText": "Curated Architectural Homes",
+    "headline": "Spaces designed for how you actually live.",
+    "description": "Explore an exclusive collection of architect-designed residences, modern hillside villas, and coastal sanctuaries across prime destinations.",
+    "availableCount": 142
+  },
+  "properties": [
+    {
+      "id": 1,
+      "title": "The Glass House Sanctuary",
+      "location": "Montecito, California",
+      "price": "$5,200,000",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "5,800 sq ft",
+      "image": "1.jpg",
+      "tag": "Featured Exclusive"
+    },
+    {
+      "id": 2,
+      "title": "Hillside Modern Pavilion",
+      "location": "Aspen, Colorado",
+      "price": "$7,850,000",
+      "beds": 5,
+      "baths": 6,
+      "sqft": "7,200 sq ft",
+      "image": "2.jpg",
+      "tag": "New Listing"
+    },
+    {
+      "id": 3,
+      "title": "Coastal Cliffside Estate",
+      "location": "Carmel-by-the-Sea, CA",
+      "price": "$9,400,000",
+      "beds": 6,
+      "baths": 7,
+      "sqft": "8,500 sq ft",
+      "image": "3.jpg",
+      "tag": "Waterfront"
+    }
+  ],
+  "metrics": [
+    { "value": "1,400+", "label": "Homes Sold" },
+    { "value": "35", "label": "Prime Cities" },
+    { "value": "99.2%", "label": "Satisfaction" }
+  ],
+  "searchTabs": ["Buy", "Rent", "Sold"],
+  "propertyTypes": [
+    "All Types",
+    "Single Family Home",
+    "Architectural Villa",
+    "Penthouse"
+  ],
+  "priceRanges": [
+    "Any Price",
+    "$1M – $3M",
+    "$3M – $6M",
+    "$6M+"
+  ],
+  "trustInfo": {
+    "pressText": "Featured in Architectural Digest, Dwell, and Robb Report.",
+    "features": [
+      "Verified Escrow",
+      "Direct Architect Connections",
+      "Private Consultations"
+    ]
+  }
+}

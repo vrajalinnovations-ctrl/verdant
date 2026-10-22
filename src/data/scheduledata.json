@@ -1,0 +1,56 @@
+{
+  "sectionHeader": {
+    "badge": "Private Appointments",
+    "title": "Schedule a Private Viewing",
+    "description": "Experience exceptional architecture in person. Our private client advisors coordinate discreet private showings, virtual walkthroughs, and bespoke travel accommodations."
+  },
+  "tourTypes": [
+    {
+      "id": "in-person",
+      "label": "In-Person Private Tour",
+      "description": "Exclusive accompanied tour with the lead architectural specialist"
+    },
+    {
+      "id": "virtual",
+      "label": "Live 4K Virtual Walkthrough",
+      "description": "Interactive guided walkthrough with real-time architectural insights"
+    },
+    {
+      "id": "advisory",
+      "label": "Private Acquisition Consultation",
+      "description": "Confidential advisory on portfolio allocation and off-market assets"
+    }
+  ],
+  "timeSlots": [
+    "Morning (10:00 AM)",
+    "Midday (1:00 PM)",
+    "Afternoon (3:30 PM)",
+    "Golden Hour / Twilight (5:30 PM)"
+  ],
+  "properties": [
+    "The Glass House Sanctuary (Montecito, CA)",
+    "Hillside Modern Pavilion (Aspen, CO)",
+    "Coastal Cliffside Estate (Carmel-by-the-Sea, CA)",
+    "The Bel-Air Horizon Villa (Los Angeles, CA)",
+    "One Central Park Sky Penthouse (New York, NY)",
+    "Biscayne Bay Waterfront Villa (Miami Beach, FL)",
+    "The Obsidian Pavilion Residences (Beverly Hills, CA)",
+    "General Confidential Portfolio Inquiry"
+  ],
+  "offices": [
+    {
+      "city": "Beverly Hills Flagship",
+      "address": "742 Evergreen Promenade, Suite 400",
+      "phone": "+1 (800) 555-0199",
+      "email": "beverlyhills@verdantestates.com",
+      "hours": "Mon - Sat: 9:00 AM - 7:00 PM PST"
+    },
+    {
+      "city": "New York Private Office",
+      "address": "450 Park Avenue, 28th Floor",
+      "phone": "+1 (212) 555-0188",
+      "email": "newyork@verdantestates.com",
+      "hours": "Mon - Fri: 9:00 AM - 6:00 PM EST"
+    }
+  ]
+}

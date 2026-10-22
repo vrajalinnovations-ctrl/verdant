@@ -1,0 +1,80 @@
+{
+  "sectionHeader": {
+    "badge": "Private Testimonials",
+    "title": "Voices of Our Esteemed Custodians",
+    "description": "Authentic reflections from architectural collectors, international family offices, and patrons who entrusted their acquisitions to Verdant."
+  },
+  "trustScore": {
+    "rating": "4.98",
+    "totalReviews": "240+ Verified High-Value Transactions",
+    "discretionRate": "100% Client Confidentiality Record"
+  },
+  "testimonials": [
+    {
+      "id": "rev-1",
+      "name": "Evelyn & Marcus Vance",
+      "role": "Technology Founder & Contemporary Art Collector",
+      "category": "Buyers",
+      "property": "Acquired The Glass House Sanctuary, Montecito ($5.2M)",
+      "avatar": "avatar-1.jpg",
+      "rating": 5,
+      "date": "March 2026",
+      "quote": "Verdant understood our architectural requirements with surgeon-like precision. They secured an extraordinary modern pavilion off-market before public release. Their discretion and escrow execution were flawless."
+    },
+    {
+      "id": "rev-2",
+      "name": "Julian De La Tour",
+      "role": "Managing Director, Global Family Office",
+      "category": "Sellers",
+      "property": "Sold Historic Bel Air Compound ($18.5M Off-Market)",
+      "avatar": "avatar-2.jpg",
+      "rating": 5,
+      "date": "January 2026",
+      "quote": "Selling a legacy estate requires absolute confidentiality. Verdant orchestrated private showings with three qualified global principals, concluding the sale at full ask in under 28 days without a single public trace."
+    },
+    {
+      "id": "rev-3",
+      "name": "Dr. Aris & Claire Thorne",
+      "role": "Biotech Venture Capitalist & Interior Architect",
+      "category": "Buyers",
+      "property": "Acquired Solarium Alpine Chalet, Aspen ($11.0M)",
+      "avatar": "avatar-3.jpg",
+      "rating": 5,
+      "date": "December 2025",
+      "quote": "The depth of their architectural knowledge sets them apart from every other agency. They understood the engineering behind the geothermal systems and guided our acquisition with unparalleled sophistication."
+    },
+    {
+      "id": "rev-4",
+      "name": "Soren Lindqvist",
+      "role": "Nordic Infrastructure Sponsor & Developer",
+      "category": "Investors",
+      "property": "Sponsored Azure Coast Development Allocation ($14.2M)",
+      "avatar": "avatar-4.jpg",
+      "rating": 5,
+      "date": "November 2025",
+      "quote": "Verdant's Private Advisory team connected us with Olson Kundig's coastal master project six months prior to public announcement. Their insight into luxury capital appreciation is peerless."
+    },
+    {
+      "id": "rev-5",
+      "name": "Amara & David Sterling",
+      "role": "Philanthropist & Aviation Executive",
+      "category": "Buyers",
+      "property": "Acquired Biscayne Bay Waterfront Villa ($14.2M)",
+      "avatar": "avatar-5.jpg",
+      "rating": 5,
+      "date": "October 2025",
+      "quote": "Securing a direct deep-water dock for our sailing catamaran was non-negotiable. Verdant identified the only private bayfront property that met every maritime specification."
+    },
+    {
+      "id": "rev-6",
+      "name": "Lady Henrietta Beaufort",
+      "role": "Private Equity Partner, London & Geneva",
+      "category": "Sellers",
+      "property": "Sold Carmel Coastal Estate ($9.4M)",
+      "avatar": "avatar-6.jpg",
+      "rating": 5,
+      "date": "September 2025",
+      "quote": "From London, we entrusted the entire process to Verdant. Their market valuation was accurate to the decimal, and they handled all architectural preservation covenants seamlessly."
+    }
+  ]
+}

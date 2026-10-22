@@ -1,0 +1,77 @@
+{
+  "sectionHeader": {
+    "badge": "Signature Architecture",
+    "title": "Iconic Developments & Master Projects",
+    "description": "Pioneering residential landmarks and sustainable private communities crafted by world-renowned architectural masters."
+  },
+  "developments": [
+    {
+      "id": "dev-1",
+      "name": "The Obsidian Pavilion Residences",
+      "location": "Beverly Hills, California",
+      "status": "Under Construction",
+      "statusType": "active",
+      "architect": "Kengo Kuma & Associates",
+      "completion": "Q4 2026",
+      "startingPrice": "$8,500,000",
+      "unitsCount": "24 Private Residences",
+      "availability": "75% Sold",
+      "description": "Organic stone architecture suspended amid mature olive groves, integrating Japanese minimalism with California indoor-outdoor panoramic living.",
+      "amenities": [
+        "Private Wine Cave & Tasting Room",
+        "Subterranean Wellness Spa & Onsen",
+        "24/7 White Glove Valet & Concierge",
+        "Infinity Edge Heated Saltwater Pool"
+      ],
+      "heroImage": "1.jpg",
+      "secondaryImage": "2.jpg"
+    },
+    {
+      "id": "dev-2",
+      "name": "Azure Coast Oceanfront Sanctuaries",
+      "location": "Malibu, California",
+      "status": "Pre-Launch Access",
+      "statusType": "exclusive",
+      "architect": "Olson Kundig Architects",
+      "completion": "Summer 2027",
+      "startingPrice": "$14,200,000",
+      "unitsCount": "12 Ocean Estates",
+      "availability": "Registration Open",
+      "description": "Dramatic cantilevered coastal pavilions boasting direct private beach access, kinetic glass walls, and native carbon-negative cedar construction.",
+      "amenities": [
+        "Direct Private Beach Access & Boardwalk",
+        "Helipad Landing Rights",
+        "Private Yacht Mooring Privileges",
+        "LEED Platinum Certified Architecture"
+      ],
+      "heroImage": "3.jpg",
+      "secondaryImage": "4.jpg"
+    },
+    {
+      "id": "dev-3",
+      "name": "Solarium Alpine Tower & Chalets",
+      "location": "Aspen, Colorado",
+      "status": "Selling Fast",
+      "statusType": "limited",
+      "architect": "Foster + Partners",
+      "completion": "Winter 2026",
+      "startingPrice": "$11,000,000",
+      "unitsCount": "18 Ski-In / Ski-Out Chalets",
+      "availability": "Only 3 Remaining",
+      "description": "A high-altitude marvel heated entirely by deep geothermal wells, offering 360-degree views of the Elk Mountain Range and ski-in/ski-out convenience.",
+      "amenities": [
+        "Ski Valet & Private Equipment Lounge",
+        "Geothermal Heated Terrace Pools",
+        "Private Michelin-Caliber Dining Room",
+        "High-Altitude Cryotherapy Suite"
+      ],
+      "heroImage": "5.jpg",
+      "secondaryImage": "6.jpg"
+    }
+  ],
+  "consultationBanner": {
+    "title": "Looking for Off-Market Development Allocations?",
+    "description": "Our Private Development Advisory connects accredited investors directly to architectural sponsor allocations prior to public release.",
+    "ctaText": "Inquire for Private Access"
+  }
+}

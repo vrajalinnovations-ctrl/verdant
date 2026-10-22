@@ -1,0 +1,47 @@
+{
+  "header": {
+    "titleLine1": "Your primary home might",
+    "titleLine2": "begin to feel left out.",
+    "videoThumb": "1.jpg",
+    "videoNote": "Each listing offers unique features, exceptional quality, and prime locations"
+  },
+  "featuredProperty": {
+    "image": "2.jpg",
+    "alt": "Modern luxury architectural estate",
+    "galleryThumbs": [
+      "1.jpg",
+      "3.jpg",
+      "4.jpg"
+    ]
+  },
+  "infoCard": {
+    "title": "Big things can happen in small spaces.",
+    "description": "With thoughtful design and smart organization, you can maximize every inch, making room for creativity",
+    "buttonText": "Details"
+  },
+  "previewCard": {
+    "image": "5.jpg",
+    "alt": "Modern prefab architectural home",
+    "priceLabel": "Pricing Start at $256K",
+    "buttonText": "Explore Properties"
+  },
+  "subCaption": "Whether it's creating a cozy corner for relaxation or transforming a small area into a workspace",
+  "stats": [
+    {
+      "value": "100%",
+      "label": "Satisfactions Clients"
+    },
+    {
+      "value": "500+",
+      "label": "Property sells"
+    },
+    {
+      "value": "150+",
+      "label": "Countries & Cities"
+    },
+    {
+      "value": "2,000+",
+      "label": "Positive reviews"
+    }
+  ]
+}

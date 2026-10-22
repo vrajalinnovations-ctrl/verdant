@@ -1,0 +1,70 @@
+{
+  "brandName": "VERDANT",
+  "brandSubtitle": "ESTATES",
+  "tagline": "Curating exceptional architectural estates, private waterfront residences, and bespoke developments worldwide.",
+  "contact": {
+    "phone": "+1 (800) 555-0199",
+    "email": "concierge@verdantestates.com",
+    "address": "742 Evergreen Promenade, Beverly Hills, CA 90210",
+    "hours": "Mon - Sat: 9:00 AM - 7:00 PM PST"
+  },
+  "columns": [
+    {
+      "title": "Properties",
+      "links": [
+        { "label": "Featured Estates", "href": "#properties" },
+        { "label": "Waterfront Residences", "href": "#properties" },
+        { "label": "Penthouses & Sky Villas", "href": "#properties" },
+        { "label": "Architectural Gems", "href": "#properties" },
+        { "label": "Private Islands", "href": "#properties" }
+      ]
+    },
+    {
+      "title": "Developments",
+      "links": [
+        { "label": "Master Communities", "href": "#developments" },
+        { "label": "New Construction", "href": "#developments" },
+        { "label": "Eco-Luxury Projects", "href": "#developments" },
+        { "label": "Historic Restorations", "href": "#developments" },
+        { "label": "Upcoming Releases", "href": "#developments" }
+      ]
+    },
+    {
+      "title": "Neighborhoods",
+      "links": [
+        { "label": "Beverly Hills", "href": "#neighborhoods" },
+        { "label": "Aspen & Snowmass", "href": "#neighborhoods" },
+        { "label": "Tribeca & SoHo", "href": "#neighborhoods" },
+        { "label": "Palm Beach", "href": "#neighborhoods" },
+        { "label": "French Riviera", "href": "#neighborhoods" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About Our Heritage", "href": "#about" },
+        { "label": "Private Advisors", "href": "#about" },
+        { "label": "Sell With Us", "href": "#sell" },
+        { "label": "Press & Recognition", "href": "#about" },
+        { "label": "Careers", "href": "#about" }
+      ]
+    }
+  ],
+  "newsletter": {
+    "badge": "Private Access",
+    "title": "The Verdant Gazette",
+    "description": "Receive private off-market invitations, market intelligence, and architectural portfolios.",
+    "placeholder": "Enter your email address",
+    "buttonText": "Subscribe"
+  },
+  "legal": {
+    "copyright": "© 2026 Verdant Estates Inc. All rights reserved.",
+    "links": [
+      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Terms of Service", "href": "#" },
+      { "label": "Equal Housing Opportunity", "href": "#" },
+      { "label": "Accessibility", "href": "#" },
+      { "label": "Cookie Settings", "href": "#" }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "aboutHeader": {
+    "badge": "Our Heritage & Vision",
+    "title": "Curating Architectural Pedigree Since 1994",
+    "lead": "Verdant Estates was founded on a singular conviction: exceptional architecture is not merely real estate—it is living art.",
+    "story": "For over three decades, our private brokerage has represented the world's most discerning families, architectural patrons, and design collectors. We operate with unwavering discretion, connecting rare properties with custodians who cherish their cultural and aesthetic importance."
+  },
+  "stats": [
+    { "value": "$4.2B+", "label": "Career Transaction Volume" },
+    { "value": "30+", "label": "Years Heritage" },
+    { "value": "99.4%", "label": "Client Retention Rate" },
+    { "value": "140+", "label": "Global Trophy Holdings" }
+  ],
+  "pillars": [
+    {
+      "title": "Architectural Custodianship",
+      "description": "We rigorously curate properties of authentic pedigree, from mid-century landmarks to cutting-edge carbon-neutral residences."
+    },
+    {
+      "title": "Strict Privacy & Discretion",
+      "description": "Over 40% of our transactions take place completely off-market, safeguarding our clients' privacy and financial confidentiality."
+    },
+    {
+      "title": "Global Private Advisory",
+      "description": "Cross-border advisory spanning Los Angeles, New York, London, Aspen, and the Côte d'Azur for seamless portfolio expansion."
+    }
+  ],
+  "contactDetails": {
+    "headline": "Schedule a Private Consultation",
+    "subline": "Whether you are acquiring a trophy residence, commissioning a bespoke development, or seeking discreet valuation, our senior partners are at your service.",
+    "phone": "+1 (800) 555-0199",
+    "email": "concierge@verdantestates.com",
+    "address": "742 Evergreen Promenade, Beverly Hills, CA 90210",
+    "hours": "Mon - Sat: 9:00 AM - 7:00 PM PST",
+    "inquiryTypes": [
+      "Acquiring a Trophy Estate",
+      "Selling a Notable Residence",
+      "Schedule Private Viewing",
+      "Development Sponsor Allocation",
+      "Confidential Valuation"
+    ]
+  }
+}
