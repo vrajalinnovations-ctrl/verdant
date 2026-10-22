@@ -2,7 +2,7 @@
 
 **Verdant Estates** is a premium, modern, and fully responsive React 19 web application template crafted specifically for ultra-luxury real estate agencies, architectural property developers, private estate brokers, and high-end residential portfolios.
 
-Engineered with **React 19**, **Vite**, and **Tailwind CSS**, it features dual luxury homepage variations, a full 5-stage client authentication suite, dedicated 404 & 500 error pages, fluid smooth scrolling, instant Dark/Light mode switching, RTL multilingual direction support, and 100% offline-bundled assets.
+Engineered with **React 19**, **Vite**, and **Tailwind CSS**, it features dual luxury homepage variations, dedicated standalone pages for **Properties**, **Features**, **About**, and **Contact**, a full 5-stage client authentication suite, dedicated 404 & 500 error pages, fluid smooth scrolling, instant Dark/Light mode switching, RTL multilingual direction support, and 100% offline-bundled assets.
 
 ---
 
@@ -14,6 +14,11 @@ Engineered with **React 19**, **Vite**, and **Tailwind CSS**, it features dual l
 - **Dual Luxury Homepage Hero Designs**:
   - **Hero 1 (`/` and `/hero1`)**: Split-screen editorial showcase with multi-tab search filter, live metrics bar, and interactive property showcase cards.
   - **Hero 2 (`/hero2`)**: Full-bleed cinematic panoramic estate slider with smooth dissolves, live GPS coordinates pill, floating flagship valuation card, and curated search dock.
+- **Dedicated Standalone Pages**:
+  - **Properties Portfolio (`/properties`)**: Comprehensive catalog with keyword search, category filter chips (Villa, Penthouse, Waterfront, Estate), price range and bedroom filters, sorting (Featured, Price, Sq Ft), Grid vs. List view switcher, and interactive full-screen property detail modal with multi-image gallery, architectural narrative, and tour booking.
+  - **Features & Architectural Standards (`/features`)**: Interactive showcase of smart home automation, master craftsmanship, private wellness suites, sovereign security envelopes, net-zero eco-engineering, and comparative specifications matrix.
+  - **About Our Heritage (`/about`)**: 30-year legacy narrative, historical milestones timeline (1994–2026), senior principals & architectural curators, international office hubs, and private consultation desk.
+  - **Contact & Private Advisory (`/contact`)**: Multi-channel advisory portal with interactive booking for in-person and 4K virtual viewings, confidential acquisition requests, 24/7 concierge lines, and international office directory.
 - **Complete 5-Stage Authentication Suite**:
   - **Client Portal Login (`/login`)**: Secure vault unlock with passkey authentication and Google / Apple SSO options.
   - **Investor Accreditation (`/register`)**: Client tier selection (Accredited Investor, Family Office, Institution) with integrated NDA covenant agreement.
@@ -26,8 +31,8 @@ Engineered with **React 19**, **Vite**, and **Tailwind CSS**, it features dual l
   - **500 Server Error (`/500`)**: Architectural maintenance and emergency contact screen.
 - **Dark & Light Mode**: Instant, high-contrast theme switching with persistent `localStorage` storage and tailored button variants (`white`, `glass`, `accent`) that look pristine in both modes.
 - **RTL (Right-to-Left) Multilingual Support**: One-click LTR/RTL direction toggle in the navbar managing `dir="rtl"` and document layout flow for Middle Eastern and global audiences.
-- **Inertial Smooth Scrolling**: Powered by `@studio-freight/lenis` for an ultra-luxurious browsing feel.
-- **100% JSON-Driven Content**: All property listings, architectural developments, neighborhood guides, testimonials, and contact details are centralized in `src/data/` for easy code-free updates.
+- **Inertial Smooth Scrolling & Modal Fit**: Powered by `@studio-freight/lenis` with `data-lenis-prevent` and hidden scrollbar utilities (`.no-scrollbar`) for flawless nested modal scrolling and viewport fit.
+- **100% JSON-Driven Content**: All property listings, architectural features, developments, neighborhood guides, testimonials, and contact details are centralized in `src/data/` for easy code-free updates.
 
 ---
 
@@ -35,34 +40,20 @@ Engineered with **React 19**, **Vite**, and **Tailwind CSS**, it features dual l
 
 ```text
 verdant-estates/
-├── public/                     # Static public assets (brand logos, documentation)
+├── public/                     # Static public assets (brand logos, documentation, sitemap)
 │   ├── logo/
 │   │   ├── logo-dark.png
 │   │   └── logo-light.png
-│   └── documentation/
+│   ├── robots.txt
+│   └── sitemap.xml
 ├── src/
 │   ├── assets/                 # Local high-resolution media assets
-│   │   ├── house/              # Local architectural property photography
-│   │   │   ├── 1.jpg
-│   │   │   ├── 2.jpg
-│   │   │   ├── 3.jpg
-│   │   │   ├── 4.jpg
-│   │   │   ├── 5.jpg
-│   │   │   ├── 6.jpg
-│   │   │   └── 7.jpg
-│   │   └── user/               # Local client & partner avatar photography
-│   │       ├── avatar-1.jpg
-│   │       ├── avatar-2.jpg
-│   │       ├── avatar-3.jpg
-│   │       ├── avatar-4.jpg
-│   │       ├── avatar-5.jpg
-│   │       ├── avatar-6.jpg
-│   │       ├── avatar-7.jpg
-│   │       └── avatar-8.jpg
+│   │   ├── house/              # Local architectural property photography (1.jpg - 7.jpg)
+│   │   └── user/               # Local client & partner avatar photography (avatar-1.jpg - 8.jpg)
 │   ├── components/
 │   │   ├── layout/             # Layout navigation and footer components
-│   │   │   ├── footer1.jsx     # Luxury multi-column footer with newsletter
-│   │   │   └── navbar1.jsx     # Sticky navbar with Theme, RTL, Login, & CTA
+│   │   │   ├── footer1.jsx     # Luxury multi-column footer with newsletter & router links
+│   │   │   └── navbar1.jsx     # Sticky navbar with Home, Properties, Features, About, Contact, Theme & RTL
 │   │   ├── sections/           # Modular, reusable page sections
 │   │   │   ├── about.jsx           # Agency story, vision, and core pillars
 │   │   │   ├── developments.jsx    # Landmark architectural master projects
@@ -79,21 +70,23 @@ verdant-estates/
 │   │   └── ui/                 # Atomic UI design system components
 │   │       ├── badge.jsx       # Badges with glass, outline, & pulse dots
 │   │       ├── button.jsx      # Buttons with primary, white, glass, & accent variants
-│   │       └── card.jsx        # Glassmorphic & elevated card containers
+│   │       ├── card.jsx        # Glassmorphic & elevated card containers
+│   │       └── seo.jsx         # SEO meta tags, OpenGraph, Twitter cards & canonical URLs
 │   ├── context/
 │   │   └── themecontext.jsx    # Theme (Dark/Light) & Direction (LTR/RTL) provider
 │   ├── data/                   # Centralized JSON configuration & data
-│   │   ├── aboutdata.json
-│   │   ├── developmentsdata.json
-│   │   ├── footerdata.json
-│   │   ├── herodata.json
-│   │   ├── houseimages.js      # Bundled local house asset resolver
-│   │   ├── navbardata.json
-│   │   ├── neighborhoodsdata.json
-│   │   ├── propertiesdata.json
-│   │   ├── scheduledata.json
-│   │   ├── showcasedata.json
-│   │   └── testimonialsdata.json
+│   │   ├── aboutdata.json          # Heritage narrative, career metrics, pillars, and contact info
+│   │   ├── developmentsdata.json   # Master communities and development projects
+│   │   ├── featuresdata.json       # Architectural features, specifications, and comparison table
+│   │   ├── footerdata.json         # Footer columns, direct page links, and newsletter data
+│   │   ├── herodata.json           # Hero headlines, metrics, search tabs, and categories
+│   │   ├── houseimages.js          # Centralized local property image resolver
+│   │   ├── navbardata.json         # Brand name, subtitle, and top navigation routes
+│   │   ├── neighborhoodsdata.json  # Global enclaves, YoY price growth, and market stats
+│   │   ├── propertiesdata.json     # Detailed properties with descriptions, amenities, and specs
+│   │   ├── scheduledata.json       # Tour formats, time slots, and international office locations
+│   │   ├── showcasedata.json       # Architecture showcase statistics and tabs
+│   │   └── testimonialsdata.json   # Verified client reviews, ratings, and avatar mappings
 │   ├── pages/                  # Top-level page routes
 │   │   ├── auth/               # Luxury client authentication suite
 │   │   │   ├── confirmpassword.jsx # Passkey reset with validation checklist
@@ -101,14 +94,18 @@ verdant-estates/
 │   │   │   ├── login.jsx           # Private client portal vault login
 │   │   │   ├── register.jsx        # Investor accreditation application
 │   │   │   └── verify.jsx          # 6-digit auto-advancing OTP verification
+│   │   ├── aboutpage.jsx       # Dedicated About Us page
+│   │   ├── contactpage.jsx     # Dedicated Contact & Private Advisory page
+│   │   ├── featurespage.jsx    # Dedicated Features & Architectural Standards page
 │   │   ├── hero1.jsx           # Homepage Variant 1 (Editorial Split Showcase)
 │   │   ├── hero2.jsx           # Homepage Variant 2 (Cinematic Panoramic Slider)
 │   │   ├── notfound.jsx        # 404 Page Not Found
+│   │   ├── propertiespage.jsx  # Dedicated Properties Portfolio Catalog page
 │   │   └── servererror.jsx     # 500 Internal Server Error
 │   ├── routes/
-│   │   └── approutes.jsx       # React Router route registry
+│   │   └── approutes.jsx       # Centralized React Router v7 route registry
 │   ├── app.jsx                 # Application root with Smooth Scroll & Theme
-│   ├── index.css               # Tailwind CSS & custom scroll animations
+│   ├── index.css               # Tailwind CSS, marquee animations, and no-scrollbar utilities
 │   └── main.jsx                # React DOM entry point
 ├── eslint.config.js            # Strict ESLint configuration
 ├── index.html                  # HTML5 entry with comprehensive SEO & OpenGraph tags
@@ -164,6 +161,10 @@ npm run lint
 | `/` | `Hero1` | Full luxury real estate landing page (Hero 1 - Editorial Split Showcase) |
 | `/hero1` | `Hero1` | Direct route for Homepage Variant 1 |
 | `/hero2` | `Hero2` | Homepage Variant 2 (Cinematic Full-Screen Panoramic Estate Slider) |
+| `/properties` | `PropertiesPage` | **Dedicated Properties Catalog**: Live search, category filter, price & bedroom selectors, Grid/List view, and interactive property detail dossier modal |
+| `/features` | `FeaturesPage` | **Dedicated Features & Standards Page**: Smart home automation, craftsmanship, wellness suites, security, eco-sustainability, and comparison matrix |
+| `/about` | `AboutPage` | **Dedicated About Us Page**: 30-year heritage narrative, historical milestones (1994–2026), senior leadership, international hubs, and consultation desk |
+| `/contact` | `ContactPage` | **Dedicated Contact & Advisory Page**: Multi-mode private tour scheduling, acquisition inquiries, 24/7 concierge lines, and international offices |
 | `/login` | `Login` | Client vault login with passkey authentication and SSO |
 | `/register` | `Register` | Investor accreditation application with client tier & NDA |
 | `/forgot-password` | `ForgotPassword` | Passkey recovery request |
@@ -180,15 +181,16 @@ All property listings, developments, reviews, and company details can be customi
 
 | Data File | Description & Contents |
 | :--- | :--- |
-| `navbardata.json` | Brand name, subtitle, navigation links, concierge phone number. |
+| `navbardata.json` | Brand name, subtitle, top navigation routes (`/`, `/properties`, `/features`, `/about`, `/contact`), phone number. |
 | `herodata.json` | Hero headline, property previews, search tabs, and metric counters. |
-| `propertiesdata.json` | Featured estates, pricing, categories (Villa, Penthouse, Waterfront), beds, baths, and square footage. |
+| `propertiesdata.json` | Featured estates, pricing, categories (Villa, Penthouse, Waterfront, Estate), beds, baths, sqft, lot sizes, year built, garage, full architectural narrative, and bespoke amenities. |
+| `featuresdata.json` | Architectural features, core pillars, deliverables, stats, and the Verdant Standard vs. Conventional Luxury comparison matrix. |
+| `aboutdata.json` | Company heritage, career transaction statistics, core pillars, and private advisory contact details. |
+| `scheduledata.json` | Private tour types (in-person, virtual, advisory), time windows, properties list, and global office hubs. |
 | `developmentsdata.json` | Architectural master projects, completion dates, lead architects, and amenity lists. |
 | `neighborhoodsdata.json` | Enclave guides, average price growth YoY, active listing counts, and lifestyle scores. |
 | `testimonialsdata.json` | Client reviews, transaction details, star ratings, and local avatar assignments. |
-| `scheduledata.json` | Private viewing scheduling slots, consultation options, and contact fields. |
-| `aboutdata.json` | Company heritage, key statistics, and core pillars of discretion. |
-| `footerdata.json` | Multi-column links, office locations, social profiles, and copyright notice. |
+| `footerdata.json` | Multi-column links with direct page routing, office locations, social profiles, and copyright notice. |
 | `houseimages.js` | Centralized local property image mapping module. |
 
 ---

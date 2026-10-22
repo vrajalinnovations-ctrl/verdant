@@ -12,41 +12,41 @@
     {
       "title": "Properties",
       "links": [
-        { "label": "Featured Estates", "href": "#properties" },
-        { "label": "Waterfront Residences", "href": "#properties" },
-        { "label": "Penthouses & Sky Villas", "href": "#properties" },
-        { "label": "Architectural Gems", "href": "#properties" },
-        { "label": "Private Islands", "href": "#properties" }
+        { "label": "Full Portfolio", "href": "/properties" },
+        { "label": "Featured Estates", "href": "/properties" },
+        { "label": "Waterfront Residences", "href": "/properties" },
+        { "label": "Penthouses & Villas", "href": "/properties" },
+        { "label": "Architectural Features", "href": "/features" }
       ]
     },
     {
       "title": "Developments",
       "links": [
-        { "label": "Master Communities", "href": "#developments" },
-        { "label": "New Construction", "href": "#developments" },
-        { "label": "Eco-Luxury Projects", "href": "#developments" },
-        { "label": "Historic Restorations", "href": "#developments" },
-        { "label": "Upcoming Releases", "href": "#developments" }
+        { "label": "Master Communities", "href": "/#developments" },
+        { "label": "New Construction", "href": "/#developments" },
+        { "label": "Eco-Luxury Projects", "href": "/#developments" },
+        { "label": "Historic Restorations", "href": "/#developments" },
+        { "label": "Upcoming Releases", "href": "/#developments" }
       ]
     },
     {
       "title": "Neighborhoods",
       "links": [
-        { "label": "Beverly Hills", "href": "#neighborhoods" },
-        { "label": "Aspen & Snowmass", "href": "#neighborhoods" },
-        { "label": "Tribeca & SoHo", "href": "#neighborhoods" },
-        { "label": "Palm Beach", "href": "#neighborhoods" },
-        { "label": "French Riviera", "href": "#neighborhoods" }
+        { "label": "Beverly Hills", "href": "/#neighborhoods" },
+        { "label": "Aspen & Snowmass", "href": "/#neighborhoods" },
+        { "label": "Tribeca & SoHo", "href": "/#neighborhoods" },
+        { "label": "Palm Beach", "href": "/#neighborhoods" },
+        { "label": "French Riviera", "href": "/#neighborhoods" }
       ]
     },
     {
       "title": "Company",
       "links": [
-        { "label": "About Our Heritage", "href": "#about" },
-        { "label": "Private Advisors", "href": "#about" },
-        { "label": "Sell With Us", "href": "#sell" },
-        { "label": "Press & Recognition", "href": "#about" },
-        { "label": "Careers", "href": "#about" }
+        { "label": "About Our Heritage", "href": "/about" },
+        { "label": "Architectural Specs", "href": "/features" },
+        { "label": "Private Advisors", "href": "/about" },
+        { "label": "Sell With Us", "href": "/#sell" },
+        { "label": "Private Client Desk", "href": "/contact" }
       ]
     }
   ],

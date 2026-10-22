@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-  Star,
-  ShieldCheck,
-  Sparkles,
-  Check,
-  Pause,
-  Play
-} from "lucide-react";
+import {Star,ShieldCheck,Sparkles,Check,Pause,Play} from "lucide-react";
 import testimonialsData from "../../data/testimonialsdata.json";
 import avatar1 from "../../assets/user/avatar-1.jpg";
 import avatar2 from "../../assets/user/avatar-2.jpg";

@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /verify
+Disallow: /confirm-password
+Disallow: /reset-password
+Disallow: /500
+
+# Sitemaps
+Sitemap: https://verdant-sandy-ten.vercel.app/sitemap.xml

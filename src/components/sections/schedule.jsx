@@ -1,16 +1,5 @@
 import { useState } from "react";
-import {
-  CalendarCheck,
-  Video,
-  Compass,
-  Clock,
-  MapPin,
-  Phone,
-  Mail,
-  ShieldCheck,
-  Check,
-  ArrowRight
-} from "lucide-react";
+import {CalendarCheck,Video,Compass,Clock,MapPin,Phone,Mail,ShieldCheck,Check,ArrowRight} from "lucide-react";
 import scheduleData from "../../data/scheduledata.json";
 
 export default function ScheduleViewingSection({

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Phone, Mail, MapPin, ArrowRight, Check } from "lucide-react";
 import { useLenis } from "lenis/react";
 import footerData from "../../data/footerdata.json";
@@ -92,6 +93,8 @@ export default function Footer1({
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const lenis = useLenis();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -105,9 +108,43 @@ export default function Footer1({
   };
 
   const handleFooterNavClick = (e, href) => {
-    if (href && href.startsWith("#")) {
+    if (!href) return;
+
+    // Direct route link (e.g., "/properties", "/features")
+    if (href.startsWith("/") && !href.startsWith("/#")) {
       e.preventDefault();
-      const targetId = href.replace("#", "");
+      navigate(href);
+      if (lenis) {
+        lenis.scrollTo(0, { duration: 0.8 });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      return;
+    }
+
+    // Anchor hash link (e.g., "#about", "/#developments")
+    if (href.startsWith("#") || href.startsWith("/#")) {
+      e.preventDefault();
+      const targetId = href.replace("/#", "").replace("#", "");
+
+      if (location.pathname !== "/") {
+        navigate(`/#${targetId}`);
+        setTimeout(() => {
+          let element = document.getElementById(targetId);
+          if (!element && targetId === "sell") {
+            element = document.getElementById("contact") || document.getElementById("schedule");
+          }
+          if (element) {
+            if (lenis) {
+              lenis.scrollTo(element, { offset: -70, duration: 1.2 });
+            } else {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }
+        }, 150);
+        return;
+      }
+
       let element = document.getElementById(targetId);
       if (!element && targetId === "sell") {
         element = document.getElementById("contact") || document.getElementById("schedule");
@@ -122,6 +159,9 @@ export default function Footer1({
 
   const handleBrandClick = (e) => {
     e.preventDefault();
+    if (location.pathname !== "/") {
+      navigate("/");
+    }
     if (lenis) {
       lenis.scrollTo(0, { duration: 1.4 });
     } else {

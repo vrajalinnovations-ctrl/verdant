@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { MapPin, Bed, Bath, Maximize2, Heart, ArrowRight, Sparkles } from "lucide-react";
 import propertiesData from "../../data/propertiesdata.json";
 import { getHouseImage } from "../../data/houseimages";
@@ -8,9 +9,10 @@ export default function FeaturedProperties({
   categories = propertiesData.categories,
   properties = propertiesData.properties,
   onPropertySelect = (property) => console.log("Selected property:", property),
-  onViewAll = () => console.log("View all clicked"),
+  onViewAll,
   className = ""
 }) {
+  const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState("All");
   const [favorites, setFavorites] = useState({});
 
@@ -185,10 +187,13 @@ export default function FeaturedProperties({
           </p>
           <button
             type="button"
-            onClick={onViewAll}
+            onClick={() => {
+              if (onViewAll) onViewAll();
+              navigate("/properties");
+            }}
             className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full bg-stone-950 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-stone-800 dark:bg-white dark:text-stone-950 dark:hover:bg-stone-200"
           >
-            <span>View All 140+ Properties</span>
+            <span>View All Residences</span>
             <ArrowRight className="h-4 w-4" />
           </button>
         </div>

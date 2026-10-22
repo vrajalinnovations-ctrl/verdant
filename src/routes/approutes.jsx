@@ -1,6 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Hero1 from "../pages/hero1";
 import Hero2 from "../pages/hero2";
+import PropertiesPage from "../pages/propertiespage";
+import FeaturesPage from "../pages/featurespage";
+import AboutPage from "../pages/aboutpage";
+import ContactPage from "../pages/contactpage";
 import NotFound from "../pages/notfound";
 import ServerError from "../pages/servererror";
 import Login from "../pages/auth/login";
@@ -15,6 +19,10 @@ export default function AppRoutes() {
       <Route path="/" element={<Hero1 />} />
       <Route path="/hero1" element={<Hero1 />} />
       <Route path="/hero2" element={<Hero2 />} />
+      <Route path="/properties" element={<PropertiesPage />} />
+      <Route path="/features" element={<FeaturesPage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/contact" element={<ContactPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />

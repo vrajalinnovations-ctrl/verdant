@@ -13,9 +13,10 @@ import TestimonialsSection from "../components/sections/testimonials";
 import AboutSection from "../components/sections/about";
 import ScheduleViewingSection from "../components/sections/schedule";
 import Footer1 from "../components/layout/footer1";
+import SEO from "../components/ui/seo";
 import heroData from "../data/herodata.json";
 
-export { Navbar1, DEFAULT_NAV_LINKS, HeroSearchBox, HeroPropertyCard, HeroMetrics, HeroTrustFooter, Showcase1, FeaturedProperties, DevelopmentsSection, NeighborhoodsSection, TestimonialsSection, AboutSection, ScheduleViewingSection, Footer1 };
+export { Navbar1, DEFAULT_NAV_LINKS, HeroSearchBox, HeroPropertyCard, HeroMetrics, HeroTrustFooter, Showcase1, FeaturedProperties, DevelopmentsSection, NeighborhoodsSection, TestimonialsSection, AboutSection, ScheduleViewingSection, Footer1, SEO };
 
 export default function Hero1({
   brandName,
@@ -52,8 +53,13 @@ export default function Hero1({
   };
   return (
     <div className="w-full">
+      <SEO
+        title="Ultra-Luxury Real Estate & Architectural Residences"
+        description="Explore trophy architectural residences, private hillside pavilions, waterfront villas, and bespoke off-market acquisitions worldwide."
+        canonical="/"
+      />
       {/* Hero Master Section */}
-      <section className="relative flex min-h-screen flex-col justify-between bg-stone-50 text-stone-900 transition-colors duration-200 dark:bg-stone-950 dark:text-stone-100">
+      <section id="hero" className="relative flex min-h-screen flex-col justify-between bg-stone-50 text-stone-900 transition-colors duration-200 dark:bg-stone-950 dark:text-stone-100">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-stone-200/40 via-transparent to-stone-50 dark:from-stone-900/40 dark:via-transparent dark:to-stone-950" />
 
         {renderNavbar && (

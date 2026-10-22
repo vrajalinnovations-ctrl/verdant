@@ -1,18 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  RefreshCw,
-  Home,
-  Phone,
-  ShieldAlert,
-  ShieldCheck,
-  Sun,
-  Moon,
-  Activity,
-  Server
-} from "lucide-react";
+import { RefreshCw, Home,Phone,ShieldAlert,ShieldCheck,Sun,Moon,Activity,Server } from "lucide-react";
 import Button from "../components/ui/button";
 import Badge from "../components/ui/badge";
+import SEO from "../components/ui/seo";
 import { useTheme } from "../context/themecontext";
 import navbarData from "../data/navbardata.json";
 const logoDark = "/logo/logo-dark.png";
@@ -52,6 +43,11 @@ export default function ServerError() {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-stone-50 text-stone-900 transition-colors duration-300 dark:bg-stone-950 dark:text-stone-100 flex flex-col justify-between">
+      <SEO
+        title="500 — System Maintenance"
+        description="Our core infrastructure is undergoing architectural routine maintenance. All client escrow registries remain secure."
+        noindex
+      />
       {/* Ambient background lighting */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         {/* Soft amber aura */}

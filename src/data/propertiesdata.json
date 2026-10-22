@@ -11,72 +11,162 @@
       "title": "The Glass House Sanctuary",
       "location": "Montecito, California",
       "price": "$5,200,000",
+      "rawPrice": 5200000,
       "category": "Villa",
       "beds": 4,
       "baths": 4.5,
       "sqft": "5,800 sq ft",
+      "rawSqft": 5800,
       "tag": "Featured Exclusive",
-      "image": "1.jpg"
+      "image": "1.jpg",
+      "gallery": ["1.jpg", "2.jpg", "3.jpg"],
+      "lotSize": "1.8 Acres",
+      "yearBuilt": 2024,
+      "garage": "3 Cars",
+      "description": "Cantilevered over manicured Montecito olive groves, this minimalist glass pavilion combines seamless indoor-outdoor living, radiant limestone floors, and a heated 60ft horizon pool.",
+      "amenities": [
+        "Private Infinity Pool",
+        "Wine Tasting Room",
+        "Smart Home Automation",
+        "Subterranean Garage",
+        "Solar Microgrid",
+        "Outdoor Kitchen"
+      ]
     },
     {
       "id": "prop-2",
       "title": "Hillside Modern Pavilion",
       "location": "Aspen, Colorado",
       "price": "$7,850,000",
+      "rawPrice": 7850000,
       "category": "Estate",
       "beds": 5,
       "baths": 6,
       "sqft": "7,200 sq ft",
+      "rawSqft": 7200,
       "tag": "New Listing",
-      "image": "2.jpg"
+      "image": "2.jpg",
+      "gallery": ["2.jpg", "3.jpg", "4.jpg"],
+      "lotSize": "3.4 Acres",
+      "yearBuilt": 2025,
+      "garage": "4 Cars",
+      "description": "Set against panoramic Rocky Mountain peaks, this architectural mountain retreat features heated radiant driveway pavers, double-height cedar ceilings, and ski-in/ski-out private access.",
+      "amenities": [
+        "Ski-In / Ski-Out Access",
+        "Cedar Dry Sauna & Cold Plunge",
+        "Heated Driveway",
+        "Double-Sided Fireplace",
+        "Private Screening Room",
+        "Wine Cellar"
+      ]
     },
     {
       "id": "prop-3",
       "title": "Coastal Cliffside Estate",
       "location": "Carmel-by-the-Sea, California",
       "price": "$9,400,000",
+      "rawPrice": 9400000,
       "category": "Waterfront",
       "beds": 6,
       "baths": 7,
       "sqft": "8,500 sq ft",
+      "rawSqft": 8500,
       "tag": "Waterfront",
-      "image": "3.jpg"
+      "image": "3.jpg",
+      "gallery": ["3.jpg", "4.jpg", "5.jpg"],
+      "lotSize": "2.1 Acres",
+      "yearBuilt": 2023,
+      "garage": "4 Cars",
+      "description": "Dramatic oceanfront cliffside residence perched directly above the crashing Pacific surf. Floor-to-ceiling acoustic glass walls frame unending vistas of whale migration corridors.",
+      "amenities": [
+        "Oceanfront Terraces",
+        "Private Cliff Path to Cove",
+        "Ozone Lap Pool",
+        "Biometric Security Suite",
+        "Chef's Prep Scullery",
+        "Rooftop Stargazing Deck"
+      ]
     },
     {
       "id": "prop-4",
       "title": "The Bel-Air Horizon Villa",
       "location": "Los Angeles, California",
       "price": "$12,500,000",
+      "rawPrice": 12500000,
       "category": "Villa",
       "beds": 5,
       "baths": 6.5,
       "sqft": "9,100 sq ft",
+      "rawSqft": 9100,
       "tag": "Architectural Icon",
-      "image": "4.jpg"
+      "image": "4.jpg",
+      "gallery": ["4.jpg", "5.jpg", "1.jpg"],
+      "lotSize": "1.4 Acres",
+      "yearBuilt": 2025,
+      "garage": "5 Cars",
+      "description": "An architectural tour-de-force behind guard-gated Bel-Air promontory gates. Boasts 270-degree skyline views from downtown LA to Santa Monica Bay, with floating cantilevered bedrooms.",
+      "amenities": [
+        "Zero-Edge Horizon Pool",
+        "Automated Vehicle Turntable",
+        "1,200 Bottle Wine Cellar",
+        "Home Wellness Spa",
+        "Guard-Gated Compound",
+        "Crestron Smart OS"
+      ]
     },
     {
       "id": "prop-5",
       "title": "One Central Park Sky Penthouse",
       "location": "Manhattan, New York",
       "price": "$16,800,000",
+      "rawPrice": 16800000,
       "category": "Penthouse",
       "beds": 4,
       "baths": 5,
       "sqft": "6,400 sq ft",
+      "rawSqft": 6400,
       "tag": "Rare Offering",
-      "image": "5.jpg"
+      "image": "5.jpg",
+      "gallery": ["5.jpg", "1.jpg", "2.jpg"],
+      "lotSize": "Full Floor",
+      "yearBuilt": 2024,
+      "garage": "Valet Parking",
+      "description": "Crown jewel full-floor aerie soaring 70 stories above Central Park. Private key-locked elevator foyer opens into a breathtaking 45-foot salon with unencumbered park-to-ocean sightlines.",
+      "amenities": [
+        "Private Keyed Elevator",
+        "360-Degree Central Park Vistas",
+        "24/7 White-Glove Doorman",
+        "Private Loggia Terrace",
+        "Calacatta Gold Bathrooms",
+        "Soundproof Music Studio"
+      ]
     },
     {
       "id": "prop-6",
       "title": "Biscayne Bay Waterfront Villa",
       "location": "Miami Beach, Florida",
       "price": "$14,200,000",
+      "rawPrice": 14200000,
       "category": "Waterfront",
       "beds": 6,
       "baths": 7,
       "sqft": "8,200 sq ft",
+      "rawSqft": 8200,
       "tag": "Private Dock",
-      "image": "6.jpg"
+      "image": "6.jpg",
+      "gallery": ["2.jpg", "3.jpg", "4.jpg"],
+      "lotSize": "0.9 Acres",
+      "yearBuilt": 2026,
+      "garage": "4 Cars",
+      "description": "Ultra-contemporary tropical modern masterpiece featuring 120 feet of prime Biscayne Bay deep-water frontage, private yacht slip accommodating up to 100ft vessels, and lush botanical atriums.",
+      "amenities": [
+        "Private Deepwater Yacht Dock",
+        "Rooftop Sunset Lounge",
+        "Indoor Courtyard Atrium",
+        "Cascading Water Walls",
+        "Secondary Catering Kitchen",
+        "Generator Microgrid"
+      ]
     }
   ]
 }

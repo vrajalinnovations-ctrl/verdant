@@ -1,18 +1,9 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import {
-  Mail,
-  Lock,
-  Eye,
-  EyeOff,
-  ArrowRight,
-  ShieldCheck,
-  Sun,
-  Moon,
-  CheckCircle2
-} from "lucide-react";
+import { Mail, Lock, Eye, EyeOff, ArrowRight, ShieldCheck, Sun, Moon, CheckCircle2 } from "lucide-react";
 import Button from "../../components/ui/button";
 import Badge from "../../components/ui/badge";
+import SEO from "../../components/ui/seo";
 import { useTheme } from "../../context/themecontext";
 const logoDark = "/logo/logo-dark.png";
 const logoLight = "/logo/logo-light.png";
@@ -44,6 +35,11 @@ export default function Login() {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-stone-50 text-stone-900 transition-colors duration-300 dark:bg-stone-950 dark:text-stone-100 flex items-center justify-center p-6">
+      <SEO
+        title="Client Portal Login"
+        description="Access your confidential real estate portfolio, saved acquisitions, and private off-market invitations with Verdant Estates."
+        canonical="/login"
+      />
       {/* Ambient background lighting */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         {/* Soft gold aura */}

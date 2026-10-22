@@ -1,0 +1,151 @@
+{
+  "header": {
+    "badge": "Signature Specifications",
+    "title": "Architectural Innovation & Bespoke Features",
+    "description": "Every Verdant residence is meticulously engineered to transcend traditional luxury—blending sustainable engineering, state-of-the-art automation, and timeless craftsmanship."
+  },
+  "stats": [
+    { "value": "100%", "label": "Custom Architectural Blueprints" },
+    { "value": "LEED Platinum", "label": "Sustainability Standard" },
+    { "value": "0.1s", "label": "Biometric Access Response" },
+    { "value": "99.9%", "label": "Hospital-Grade Air Purity" }
+  ],
+  "categories": [
+    "All Features",
+    "Smart Automation",
+    "Craftsmanship",
+    "Wellness & Spa",
+    "Security & Privacy",
+    "Eco-Sustainability",
+    "Concierge & Lifestyle"
+  ],
+  "features": [
+    {
+      "id": "feat-1",
+      "category": "Smart Automation",
+      "title": "Autonomous Smart Living Ecosystem",
+      "subtitle": "Crestron & Savant Next-Gen Integration",
+      "description": "Unified central nervous system for your residence. Effortlessly coordinate circadian lighting, temperature zoning, motorized acoustic drapery, and multi-room audio through discrete touchscreens or secure voice profiles.",
+      "icon": "Cpu",
+      "badge": "AI-Powered",
+      "highlights": [
+        "Dynamic Circadian Lighting that adapts to natural solar patterns",
+        "Acoustic zoning with invisible architectural wall speakers",
+        "Predictive climate control optimizing energy during absence",
+        "Touchless biometric entry with automated welcome protocols"
+      ]
+    },
+    {
+      "id": "feat-2",
+      "category": "Craftsmanship",
+      "title": "Rare Materials & Bespoke Millwork",
+      "subtitle": "Curated European Stone & Solid Oak",
+      "description": "We source bookmatched Calacatta marble slabs directly from Italian quarries, hand-finished European white oak flooring, and custom patinated bronze ironwork engineered to age gracefully across generations.",
+      "icon": "Compass",
+      "badge": "Master Built",
+      "highlights": [
+        "Continuous vein bookmatched marble kitchen islands & master baths",
+        "Floor-to-ceiling thermal-break acoustic glazing up to 14ft tall",
+        "Custom solid wood fluted paneling and flush-mount pivot doors",
+        "Hand-forged architectural bronze hardware with lifetime patina"
+      ]
+    },
+    {
+      "id": "feat-3",
+      "category": "Wellness & Spa",
+      "title": "Private In-Residence Wellness Suites",
+      "subtitle": "Sanctuary for Rest, Recovery & Vitality",
+      "description": "Designed in collaboration with world-class wellness practitioners. Features commercial-grade recovery facilities right in your private pavilion without leaving the estate grounds.",
+      "icon": "Sparkles",
+      "badge": "Restorative",
+      "highlights": [
+        "Zero-chlorine ozone heated swimming pools with negative-edge horizons",
+        "Nordic cedar dry sauna paired with sub-zero cryotherapy cold plunges",
+        "Private Himalayan pink salt vapor meditation suites",
+        "Acoustically isolated pilates & functional fitness pavilions"
+      ]
+    },
+    {
+      "id": "feat-4",
+      "category": "Security & Privacy",
+      "title": "Sovereign Security & Seclusion Envelopes",
+      "subtitle": "Discreet Embassy-Grade Protection",
+      "description": "Engineered for peace of mind. Comprehensive multi-layered security shields that remain completely invisible to guests while maintaining uninterrupted perimeter defense.",
+      "icon": "ShieldCheck",
+      "badge": "Class-IV Defense",
+      "highlights": [
+        "Subterranean parking gallery with automated vehicle turntable",
+        "Biometric destination-dispatch elevator with private access keying",
+        "Perimeter thermal infrared sensors & AI anomaly tracking",
+        "Ballistic and high-impact certified storm glazed envelopes"
+      ]
+    },
+    {
+      "id": "feat-5",
+      "category": "Eco-Sustainability",
+      "title": "Net-Zero Energy & Pure Air Filtration",
+      "subtitle": "Passive House Design & Solar Integration",
+      "description": "Sustainable luxury with zero compromise. Verdant estates generate more renewable energy than they consume, featuring hospital-grade medical air reclamation that filters down to 0.01 microns.",
+      "icon": "Leaf",
+      "badge": "Net-Zero Ready",
+      "highlights": [
+        "Tesla Solar Roof & dual Powerwall 3 battery backup microgrid",
+        "Closed-loop geothermal HVAC system reducing emissions by 85%",
+        "Triple HEPA filtration with UV-C germicidal air scrubbers",
+        "Greywater recycling system feeding botanical rainwater gardens"
+      ]
+    },
+    {
+      "id": "feat-6",
+      "category": "Concierge & Lifestyle",
+      "title": "White-Glove Bespoke Concierge & Access",
+      "subtitle": "Dedicated Private Estate Advisory",
+      "description": "Ownership includes 24/7 access to Verdant's global concierge desk. From yacht provisioning to private aviation clearance and private sommelier cellar management.",
+      "icon": "Crown",
+      "badge": "VIP Privileges",
+      "highlights": [
+        "Dedicated on-demand estate manager & maintenance technicians",
+        "Priority heliport reservations and deep-water marina dockage",
+        "Private art curation and climate-controlled vault storage",
+        "Access to Verdant Owners' Global Club residences in Aspen, Monaco & St. Barts"
+      ]
+    }
+  ],
+  "comparison": {
+    "title": "The Verdant Standard vs. Conventional Luxury",
+    "subtitle": "See how our architectural standards redefine high-end residential engineering.",
+    "columns": ["Specification", "Conventional High-End", "Verdant Estate Standard"],
+    "rows": [
+      {
+        "spec": "Air Filtration",
+        "conventional": "Standard MERV-8 HVAC filter",
+        "verdant": "Medical-Grade Triple HEPA + UV-C Scrubbing (99.97%)"
+      },
+      {
+        "spec": "Home Automation",
+        "conventional": "App-based modular third-party devices",
+        "verdant": "Full Crestron/Savant Hardwired Enterprise Architecture"
+      },
+      {
+        "spec": "Glazing & Acoustics",
+        "conventional": "Double-pane standard tempered glass",
+        "verdant": "Triple-laminated acoustic low-iron glass (STC 45+)"
+      },
+      {
+        "spec": "Energy & Resilience",
+        "conventional": "Standard grid hookup with diesel backup",
+        "verdant": "Integrated Solar Glass + Geothermal Microgrid"
+      },
+      {
+        "spec": "Access & Privacy",
+        "conventional": "Keypad or generic smart lock",
+        "verdant": "Multi-Factor Biometric + Subterranean Vault Access"
+      },
+      {
+        "spec": "Water Quality",
+        "conventional": "Municipal tap with point-of-use filter",
+        "verdant": "Whole-estate multi-stage reverse osmosis filtration"
+      }
+    ]
+  }
+}

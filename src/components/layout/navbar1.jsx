@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Phone, Menu, X, Sun, Moon, Languages, User } from "lucide-react";
 import { useLenis } from "lenis/react";
 import Button from "../ui/button";
@@ -23,31 +23,67 @@ export default function Navbar1({
   const [menuOpen, setMenuOpen] = useState(false);
   const { toggleTheme, dir, toggleDir, isDark, isRtl } = useTheme();
   const lenis = useLenis();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleNavClick = (e, href) => {
-    if (href && href.startsWith("#")) {
-      e.preventDefault();
-      const targetId = href.replace("#", "");
-      let element = document.getElementById(targetId);
+    if (!href) return;
+    setMenuOpen(false);
 
-      // If #sell is targeted, scroll to the consultation/contact or property valuation desk
+    // If it's a page route like "/properties" or "/features"
+    if (href.startsWith("/") && !href.startsWith("/#")) {
+      e.preventDefault();
+      navigate(href);
+      if (lenis) {
+        lenis.scrollTo(0, { duration: 0.8 });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      return;
+    }
+
+    // Anchor link (e.g. "#properties", "/#developments")
+    if (href.startsWith("#") || href.startsWith("/#")) {
+      e.preventDefault();
+      const targetId = href.replace("/#", "").replace("#", "");
+
+      if (location.pathname !== "/") {
+        navigate(`/#${targetId}`);
+        setTimeout(() => {
+          let element = document.getElementById(targetId);
+          if (!element && targetId === "sell") {
+            element = document.getElementById("contact") || document.getElementById("schedule");
+          }
+          if (element) {
+            if (lenis) {
+              lenis.scrollTo(element, { offset: -70, duration: 1.2 });
+            } else {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }
+        }, 150);
+        return;
+      }
+
+      let element = document.getElementById(targetId);
       if (!element && targetId === "sell") {
         element = document.getElementById("contact") || document.getElementById("schedule");
       }
-
       if (lenis && element) {
         lenis.scrollTo(element, { offset: -70, duration: 1.4 });
       } else if (element) {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-      setMenuOpen(false);
     }
   };
 
   const handleBrandClick = (e) => {
     e.preventDefault();
+    if (location.pathname !== "/") {
+      navigate("/");
+    }
     if (lenis) {
-      lenis.scrollTo(0, { duration: 1.4 });
+      lenis.scrollTo(0, { duration: 1.2 });
     } else {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -97,16 +133,23 @@ export default function Navbar1({
         </div>
 
         <nav className="hidden items-center gap-2 md:flex">
-          {navLinks.map((link, idx) => (
-            <a
-              key={idx}
-              href={link.href}
-              onClick={(e) => handleNavClick(e, link.href)}
-              className="cursor-pointer rounded-lg px-3 py-1.5 text-sm font-medium text-stone-600 transition-all hover:bg-stone-100 hover:text-stone-950 dark:text-stone-300 dark:hover:bg-stone-800 dark:hover:text-white"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link, idx) => {
+            const isActive = location.pathname === link.href;
+            return (
+              <a
+                key={idx}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className={`cursor-pointer rounded-lg px-3 py-1.5 text-sm font-medium transition-all ${
+                  isActive
+                    ? "bg-stone-200 text-stone-950 font-semibold dark:bg-stone-800 dark:text-white"
+                    : "text-stone-600 hover:bg-stone-100 hover:text-stone-950 dark:text-stone-300 dark:hover:bg-stone-800 dark:hover:text-white"
+                }`}
+              >
+                {link.label}
+              </a>
+            );
+          })}
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
@@ -190,16 +233,23 @@ export default function Navbar1({
       {menuOpen && (
         <div className="border-t border-stone-200 bg-white p-6 md:hidden dark:border-stone-800 dark:bg-stone-900">
           <div className="flex flex-col gap-2">
-            {navLinks.map((link, idx) => (
-              <a
-                key={idx}
-                href={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
-                className="cursor-pointer rounded-lg px-3 py-2 text-base font-medium text-stone-800 transition-colors hover:bg-stone-100 hover:text-stone-950 dark:text-stone-200 dark:hover:bg-stone-800 dark:hover:text-white"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link, idx) => {
+              const isActive = location.pathname === link.href;
+              return (
+                <a
+                  key={idx}
+                  href={link.href}
+                  onClick={(e) => handleNavClick(e, link.href)}
+                  className={`cursor-pointer rounded-lg px-3 py-2 text-base font-medium transition-colors ${
+                    isActive
+                      ? "bg-stone-100 font-semibold text-stone-950 dark:bg-stone-800 dark:text-white"
+                      : "text-stone-800 hover:bg-stone-100 hover:text-stone-950 dark:text-stone-200 dark:hover:bg-stone-800 dark:hover:text-white"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
             <div className="mt-4 flex flex-col gap-2 border-t border-stone-200 pt-4 dark:border-stone-800">
               <Link
                 to="/login"

@@ -1,14 +1,5 @@
 import { useState } from "react";
-import {
-  Building2,
-  Calendar,
-  Layers,
-  ArrowUpRight,
-  Download,
-  ShieldCheck,
-  Check,
-  MapPin
-} from "lucide-react";
+import { Building2, Calendar, Layers, ArrowUpRight, Download, ShieldCheck, Check, MapPin } from "lucide-react";
 import developmentsData from "../../data/developmentsdata.json";
 import { getHouseImage } from "../../data/houseimages";
 

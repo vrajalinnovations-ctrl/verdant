@@ -42,7 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. Live Preview Navigation Protocol Handling
   const livePreviewBtns = document.querySelectorAll('.preview-btn-link');
   if (window.location.protocol === 'file:') {
-    livePreviewBtns.forEach(btn => btn.setAttribute('href', '../../index.html'));
+    livePreviewBtns.forEach(btn => {
+      const currentHref = btn.getAttribute('href');
+      if (currentHref && !currentHref.startsWith('http')) {
+        btn.setAttribute('href', '../../index.html');
+      }
+    });
   }
 
   // 4. Mobile Sidebar Drawer

@@ -1,21 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLenis } from "lenis/react";
-import {
-  MapPin,
-  Bed,
-  Bath,
-  Maximize2,
-  ArrowRight,
-  Sparkles,
-  ChevronLeft,
-  ChevronRight,
-  Compass,
-  Search,
-  SlidersHorizontal,
-  Building,
-  DollarSign
-} from "lucide-react";
+import { MapPin,Bed,Bath,Maximize2,ArrowRight,Sparkles,ChevronLeft,ChevronRight,Compass,Search,SlidersHorizontal,Building,DollarSign} from "lucide-react";
 import Navbar1 from "../components/layout/navbar1";
 import Button from "../components/ui/button";
 import Badge from "../components/ui/badge";
@@ -26,6 +12,7 @@ import TestimonialsSection from "../components/sections/testimonials";
 import AboutSection from "../components/sections/about";
 import ScheduleViewingSection from "../components/sections/schedule";
 import Footer1 from "../components/layout/footer1";
+import SEO from "../components/ui/seo";
 import { getHouseImage } from "../data/houseimages";
 
 const FLAGSHIP_ESTATES = [
@@ -118,6 +105,11 @@ export default function Hero2({
 
   return (
     <div className="w-full">
+      <SEO
+        title="Cinematic Estates & Architectural Masterpieces"
+        description="Immerse in trophy architectural residences, French Riviera estates, and alpine ski-in chalets with panoramic cinematic previews."
+        canonical="/hero2"
+      />
       {/* Cinematic Hero Master Viewport */}
       <section className="relative min-h-screen w-full flex flex-col justify-between overflow-hidden bg-stone-950 text-white">
         {/* Dynamic Background Image Layers with Smooth Dissolve */}

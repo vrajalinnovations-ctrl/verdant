@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-  Compass,
-  MapPin,
-  TrendingUp,
-  ArrowUpRight,
-  Sparkles,
-  Check
-} from "lucide-react";
+import {  Compass,MapPin,TrendingUp,ArrowUpRight,Sparkles,Check} from "lucide-react";
 import neighborhoodsData from "../../data/neighborhoodsdata.json";
 import { getHouseImage } from "../../data/houseimages";
 
